@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.3" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png?v=5.1.3">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png?v=5.1.3">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png?v=5.1.3">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.3" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="docker," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="基础类查看docker信息12345678910# 查看docker版本docker version# 显示docker系统的信息docker info# 日志信息docker logs# 故障检查service  docker  status# 启动关闭dockersudo service docker start|stop 日志类查看容器日志1docker logs -f &amp;lt;容器名orI">
+<meta name="keywords" content="docker">
+<meta property="og:type" content="article">
+<meta property="og:title" content="docker常用命令记录">
+<meta property="og:url" content="http://yoursite.com/2017/11/08/docke/index.html">
+<meta property="og:site_name" content="Rainer">
+<meta property="og:description" content="基础类查看docker信息12345678910# 查看docker版本docker version# 显示docker系统的信息docker info# 日志信息docker logs# 故障检查service  docker  status# 启动关闭dockersudo service docker start|stop 日志类查看容器日志1docker logs -f &amp;lt;容器名orI">
+<meta property="og:updated_time" content="2017-11-08T04:53:55.780Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="docker常用命令记录">
+<meta name="twitter:description" content="基础类查看docker信息12345678910# 查看docker版本docker version# 显示docker系统的信息docker info# 日志信息docker logs# 故障检查service  docker  status# 启动关闭dockersudo service docker start|stop 日志类查看容器日志1docker logs -f &amp;lt;容器名orI">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.3',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2017/11/08/docke/"/>
+
+
+
+
+
+  <title>docker常用命令记录 | Rainer</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Rainer</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/11/08/docke/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Rainer">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Rainer">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">docker常用命令记录</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-11-08T12:34:45+08:00">
+                2017-11-08
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/web/" itemprop="url" rel="index">
+                    <span itemprop="name">web</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="基础类"><a href="#基础类" class="headerlink" title="基础类"></a>基础类</h1><h2 id="查看docker信息"><a href="#查看docker信息" class="headerlink" title="查看docker信息"></a>查看docker信息</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"># 查看docker版本</div><div class="line">docker version</div><div class="line"># 显示docker系统的信息</div><div class="line">docker info</div><div class="line"># 日志信息</div><div class="line">docker logs</div><div class="line"># 故障检查</div><div class="line">service  docker  status</div><div class="line"># 启动关闭docker</div><div class="line">sudo service docker start|stop</div></pre></td></tr></table></figure>
+<h1 id="日志类"><a href="#日志类" class="headerlink" title="日志类"></a>日志类</h1><h2 id="查看容器日志"><a href="#查看容器日志" class="headerlink" title="查看容器日志"></a>查看容器日志</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">docker logs -f &lt;容器名orID&gt;</div></pre></td></tr></table></figure>
+<h2 id="docker-daemon-日志位置"><a href="#docker-daemon-日志位置" class="headerlink" title="docker daemon 日志位置"></a>docker daemon 日志位置</h2><p>根据系统不同各不相同<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">* Ubuntu - /var/log/upstart/docker.log</div><div class="line">* Boot2Docker - /var/log/docker.log</div><div class="line">* Debian GNU/Linux - /var/log/daemon.log</div><div class="line">* CentOS - /var/log/daemon.log | grep docker</div><div class="line">* Fedora - journalctl -u docker.service</div><div class="line">* Red Hat Enterprise Linux Server - /var/log/messages | grep docker</div></pre></td></tr></table></figure></p>
+<h2 id="docker-ps没有响应-日志查询"><a href="#docker-ps没有响应-日志查询" class="headerlink" title="docker ps没有响应 日志查询"></a>docker ps没有响应 日志查询</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"># grep 所有容器的config.json</div><div class="line">docker logs [conID]</div><div class="line"># 确认问题后</div><div class="line"># 该config.json 中有该容器1号进程的pid</div><div class="line">kill -9 pid</div></pre></td></tr></table></figure>
+<h1 id="容器类"><a href="#容器类" class="headerlink" title="容器类"></a>容器类</h1><p>docker容器可以理解为在沙盒中运行的进程。</p>
+<blockquote>
+<p>这个沙盒包含了该进程运行所必须的资源，包括文件系统、系统类库、shell 环境等等。但这个沙盒默认是不会运行任何程序的。你需要在沙盒中运行一个进程来启动某一个容器。这个进程是该容器的唯一进程，所以当该进程结束的时候，容器也会完全的停止。</p>
+<h2 id="查看容器信息"><a href="#查看容器信息" class="headerlink" title="查看容器信息"></a>查看容器信息</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"># 查看当前运行的容器</div><div class="line">docker ps</div><div class="line"># 查看全部容器</div><div class="line">docker ps -a</div><div class="line"># 查看全部容器的id和信息</div><div class="line">docker ps -a -q</div><div class="line"># 查看一个正在运行容器进程，支持 ps 命令参数</div><div class="line">docker top</div><div class="line"># 查看容器的示例id</div><div class="line">sudo docker inspect -f  &apos;&#123;&#123;.Id&#125;&#125;&apos; [id]</div><div class="line"># 检查镜像或者容器的参数，默认返回 JSON 格式</div><div class="line">docker inspect</div><div class="line"># 返回 ubuntu:14.04  镜像的 docker 版本</div><div class="line">docker inspect --format &apos;&#123;&#123;.DockerVersion&#125;&#125;&apos; ubuntu:14.04</div></pre></td></tr></table></figure>
+</blockquote>
+<h2 id="容器同步命令"><a href="#容器同步命令" class="headerlink" title="容器同步命令"></a>容器同步命令</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"># 保存对容器的修改</div><div class="line">docker commit</div><div class="line"># 对比容器的改动</div><div class="line">docker diff</div><div class="line"># 附加到一个运行的容器上</div><div class="line">docker attach</div></pre></td></tr></table></figure>
+<h2 id="容器操作命令"><a href="#容器操作命令" class="headerlink" title="容器操作命令"></a>容器操作命令</h2><h3 id="创建删除容器"><a href="#创建删除容器" class="headerlink" title="创建删除容器"></a>创建删除容器</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"># 创建一个容器命名为 test 使用镜像daocloud.io/library/ubuntu</div><div class="line">docker create -it --name test daocloud.io/library/ubuntu</div><div class="line"># 创建并启动一个容器 名为 test 使用镜像daocloud.io/library/ubuntu</div><div class="line">docker run --name test daocloud.io/library/ubuntu</div><div class="line"># 删除一个容器</div><div class="line">docker rm [容器id]</div><div class="line"># 删除所有容器</div><div class="line">docker rm `docker ps -a -q`</div><div class="line"># 根据Dockerfile 构建</div><div class="line">docker build -t [image_name] [Dockerfile_path]</div></pre></td></tr></table></figure>
+<h3 id="docker容器随系统自启"><a href="#docker容器随系统自启" class="headerlink" title="docker容器随系统自启"></a>docker容器随系统自启</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">docker run --restart=always</div></pre></td></tr></table></figure>
+<ul>
+<li>no – 默认值，如果容器挂掉不自动重启</li>
+<li>on-failure – 当容器以非 0 码退出时重启容器,同时可接受一个可选的最大重启次数参数 (e.g. on-failure:10).</li>
+<li>always – 不管退出码是多少都要重启<h3 id="容器资源限制参数"><a href="#容器资源限制参数" class="headerlink" title="容器资源限制参数"></a>容器资源限制参数</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"># 限制内存最大使用</div><div class="line">-m 1024m --memory-swap=1024m</div><div class="line"># 限制容器使用CPU</div><div class="line">--cpuset-cpus=&quot;0,1&quot;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="把一个正在运行的容器保存为镜像"><a href="#把一个正在运行的容器保存为镜像" class="headerlink" title="把一个正在运行的容器保存为镜像"></a>把一个正在运行的容器保存为镜像</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">docker commit &lt;CONTAIN-ID&gt; &lt;IMAGE-NAME&gt;</div></pre></td></tr></table></figure>
+<h3 id="启动停止容器等操作"><a href="#启动停止容器等操作" class="headerlink" title="启动停止容器等操作"></a>启动停止容器等操作</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">docker start|stop|restart [id]</div><div class="line"># 暂停|恢复 某一容器的所有进程</div><div class="line">docker pause|unpause [id]</div><div class="line"># 杀死一个或多个指定容器进程</div><div class="line">docker kill -s KILL [id]</div><div class="line"># 停止全部运行的容器</div><div class="line">docker stop `docker ps -q`</div><div class="line"># 杀掉全部运行的容器</div><div class="line">docker kill -s KILL `docker ps -q`</div></pre></td></tr></table></figure>
+<h3 id="交互式进入容器"><a href="#交互式进入容器" class="headerlink" title="交互式进入容器"></a>交互式进入容器</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo docker exec -it &#123;&#123;containerName or containerID&#125;&#125; bash</div></pre></td></tr></table></figure>
+<h3 id="查看容器的root用户密码"><a href="#查看容器的root用户密码" class="headerlink" title="查看容器的root用户密码"></a>查看容器的root用户密码</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">docker logs &lt;容器名orID&gt; 2&gt;&amp;1 | grep &apos;^User: &apos; | tail -n1</div></pre></td></tr></table></figure>
+<p>因为Docker容器启动时的root用户的密码是随机分配的。所以，通过这种方式就可以得到容器的root用户的密码了</p>
+<h3 id="容器于宿主拷贝文件"><a href="#容器于宿主拷贝文件" class="headerlink" title="容器于宿主拷贝文件"></a>容器于宿主拷贝文件</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">docker cp [OPTIONS] CONTAINER:SRC_PATH DEST_PATH|-</div><div class="line">docker cp [OPTIONS] SRC_PATH|- CONTAINER:DEST_PATH</div><div class="line"># 本地文件上传到对应容器的目录</div><div class="line">docker cp local.sh [CONTAINERid]:[TagPath]</div></pre></td></tr></table></figure>
+<p>此命令为高版本docker才有，当然1.11+肯定包含</p>
+<h3 id="运行一个新容器，同时为它命名、端口映射、文件夹映射"><a href="#运行一个新容器，同时为它命名、端口映射、文件夹映射" class="headerlink" title="运行一个新容器，同时为它命名、端口映射、文件夹映射"></a>运行一个新容器，同时为它命名、端口映射、文件夹映射</h3><p>以<code>redmine</code>镜像为例<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">docker run --name redmine -p 9003:80 -p 9023:22 -d -v /var/redmine/files:/redmine/files -v /var/redmine/mysql:/var/lib/mysql sameersbn/redmine</div></pre></td></tr></table></figure></p>
+<h3 id="一个容器连接到另一个容器"><a href="#一个容器连接到另一个容器" class="headerlink" title="一个容器连接到另一个容器"></a>一个容器连接到另一个容器</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">docker run -i -t --name sonar -d -link mmysql:db  tpires/sonar-server sonar</div></pre></td></tr></table></figure>
+<h3 id="导入导出容器"><a href="#导入导出容器" class="headerlink" title="导入导出容器"></a>导入导出容器</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"># 支持远程文件 .tar, .tar.gz, .tgz, .bzip, .tar.xz, .txz</div><div class="line">docker import</div><div class="line"># 导出</div><div class="line">docker export [id] &gt;~/Downloads/ubuntu_nexus.tar</div><div class="line">导出后导入（exported-imported)）的容器会丢失所有的提交历史，无法回滚。</div></pre></td></tr></table></figure>
+<h1 id="镜像操作"><a href="#镜像操作" class="headerlink" title="镜像操作"></a>镜像操作</h1><h2 id="远程镜像"><a href="#远程镜像" class="headerlink" title="远程镜像"></a>远程镜像</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">docker login</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">docker search</div><div class="line"># 搜索处收藏数不小于 3 ，并且能够自动化构建的  django 镜像，并且完整显示镜像描述</div><div class="line">docker search -s 3 --automated --no-trunc django</div><div class="line">docker pull</div><div class="line"># 拉取ubuntu最新的镜像</div><div class="line">docker pull ubuntu:latest</div><div class="line"># 服务器拉取个人动态，可选择时间区间</div><div class="line">docker events</div><div class="line"># 拉取个人从 2015/07/20 到 2015/08/08 的个人动态</div><div class="line">docker events --since=&quot;20150720&quot; --until=&quot;20150808&quot;</div><div class="line">`</div></pre></td></tr></table></figure>
+<h2 id="镜像同步操作"><a href="#镜像同步操作" class="headerlink" title="镜像同步操作"></a>镜像同步操作</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div></pre></td><td class="code"><pre><div class="line"># 标记本地镜像，将其归入某一仓库</div><div class="line">docker tag</div><div class="line"># 将 ID 为 5db5f84x1261 的容器标记为 mine/lnmp:0.2 镜像</div><div class="line">docker tag 5db5f84x1261 mine/lnmp:0.2</div><div class="line"># 将镜像推送至远程仓库，默认为 Docker Hub</div><div class="line">docker push</div><div class="line">本地镜像</div><div class="line"></div><div class="line"># 列出本地所有镜像</div><div class="line">docker images</div><div class="line"># 本地镜像名为 ubuntu 的所有镜像</div><div class="line">docker images ubuntu</div><div class="line"># 查看指定镜像的创建历史</div><div class="line">docker history [id]</div><div class="line"># 本地移除一个或多个指定的镜像</div><div class="line">docker rmi</div><div class="line"># 移除本地全部镜像</div><div class="line">docker rmi `docker images -a -q`</div><div class="line"># 指定镜像保存成 tar 归档文件， docker load 的逆操作</div><div class="line">docker save</div><div class="line"># 将镜像 ubuntu:14.04 保存为 ubuntu14.04.tar 文件</div><div class="line">docker save -o ubuntu14.04.tar ubuntu:14.04</div><div class="line"># 从 tar 镜像归档中载入镜像， docker save 的逆操作</div><div class="line">docker load</div><div class="line"># 上面命令的意思是将 ubuntu14.04.tar 文件载入镜像中</div><div class="line">docker load -i ubuntu14.04.tar</div><div class="line">docker load &lt; /home/save.tar</div><div class="line"># 构建自己的镜像</div><div class="line">docker build -t &lt;镜像名&gt; &lt;Dockerfile路径&gt;</div><div class="line">docker build -t xx/gitlab .</div></pre></td></tr></table></figure>
+<blockquote>
+<p>保存后再加载（saved-loaded）的镜像不会丢失提交历史和层，可以回滚</p>
+<h2 id="重新查看container的stdout"><a href="#重新查看container的stdout" class="headerlink" title="重新查看container的stdout"></a>重新查看container的stdout</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"># 启动top命令，后台运行</div><div class="line">$ ID=$(sudo docker run -d ubuntu /usr/bin/top -b)</div><div class="line"># 获取正在running的container的输出</div><div class="line">$ sudo docker attach $ID</div><div class="line">top - 02:05:52 up  3:05,  0 users,  load average: 0.01, 0.02, 0.05</div><div class="line">Tasks:  1 total,  1 running,  0 sleeping,  0 stopped,  0 zombie</div><div class="line">Cpu(s):  0.1%us,  0.2%sy,  0.0%ni, 99.7%id,  0.0%wa,  0.0%hi,  0.0%si,  0.0%st</div><div class="line">Mem:    373572k total,  355560k used,    18012k free,    27872k buffers</div><div class="line">Swap:  786428k total,        0k used,  786428k free,  221740k cached</div><div class="line">^C$</div><div class="line">$ sudo docker stop $ID</div></pre></td></tr></table></figure>
+</blockquote>
+<h1 id="docker-run"><a href="#docker-run" class="headerlink" title="docker run"></a>docker run</h1><h2 id="后台运行-d-、并暴露端口"><a href="#后台运行-d-、并暴露端口" class="headerlink" title="后台运行(-d)、并暴露端口"></a>后台运行(-d)、并暴露端口</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">docker run -d -p 127.0.0.1:33301:22 centos6-ssh</div></pre></td></tr></table></figure>
+<h2 id="run-命令详解"><a href="#run-命令详解" class="headerlink" title="run 命令详解"></a>run 命令详解</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div></pre></td><td class="code"><pre><div class="line">-a, --attach=[]            Attach to STDIN, STDOUT or STDERR 指定标准输入输出内容类型，可选 STDIN/STDOUT/STDERR 三项</div><div class="line">  --add-host=[]              Add a custom host-to-IP mapping (host:ip)</div><div class="line">  --blkio-weight=0            Block IO (relative weight), between 10 and 1000</div><div class="line">  -c, --cpu-shares=0          CPU shares (relative weight)</div><div class="line">  --cap-add=[]                Add Linux capabilities</div><div class="line">  --cap-drop=[]              Drop Linux capabilities</div><div class="line">  --cgroup-parent=            Optional parent cgroup for the container</div><div class="line">  --cidfile=                  Write the container ID to the file</div><div class="line">  --cpu-period=0              Limit CPU CFS (Completely Fair Scheduler) period</div><div class="line">  --cpu-quota=0              Limit the CPU CFS quota</div><div class="line">  --cpuset-cpus=              CPUs in which to allow execution (0-3, 0,1) 绑定容器到指定CPU运行</div><div class="line">  --cpuset-mems=              MEMs in which to allow execution (0-3, 0,1) 绑定容器到指定MEM运行</div><div class="line">  -d, --detach=false          Run container in background and print container ID 后台运行容器，并返回容器ID</div><div class="line">  --device=[]                Add a host device to the container</div><div class="line">  --dns=[]                    Set custom DNS servers 指定容器使用的DNS服务器，默认和宿主一致</div><div class="line">  --dns-search=[]            Set custom DNS search domains 指定容器DNS搜索域名，默认和宿主一致</div><div class="line">  -e, --env=[]                Set environment variables 设置环境变量</div><div class="line">  --entrypoint=              Overwrite the default ENTRYPOINT of the image</div><div class="line">  --env-file=[]              Read in a file of environment variables 从指定文件读入环境变量</div><div class="line">  --expose=[]                Expose a port or a range of ports</div><div class="line">  -h, --hostname=            Container host name 指定容器的hostname</div><div class="line">  --help=false                Print usage</div><div class="line">  -i, --interactive=false    Keep STDIN open even if not attached 以交互模式运行容器，通常与 -t 同时使用</div><div class="line">  --ipc=                      IPC namespace to use</div><div class="line">  -l, --label=[]              Set meta data on a container</div><div class="line">  --label-file=[]            Read in a line delimited file of labels</div><div class="line">  --link=[]                  Add link to another container</div><div class="line">  --log-driver=              Logging driver for container</div><div class="line">  --log-opt=[]                Log driver options</div><div class="line">  --lxc-conf=[]              Add custom lxc options</div><div class="line">  -m, --memory=              Memory limit</div><div class="line">  --mac-address=              Container MAC address (e.g. 92:d0:c6:0a:29:33)</div><div class="line">  --memory-swap=              Total memory (memory + swap), &apos;-1&apos; to disable swap</div><div class="line">  --name=                    Assign a name to the container 为容器指定一个名称</div><div class="line">  --net=bridge                Set the Network mode for the container  指定容器的网络连接类型，支持 bridge/host/none/container:&lt;name|id&gt; 四种类型</div><div class="line">  --oom-kill-disable=false    Disable OOM Killer</div><div class="line">  -P, --publish-all=false    Publish all exposed ports to random ports</div><div class="line">  -p, --publish=[]            Publish a container&apos;s port(s) to the host</div><div class="line">  --pid=                      PID namespace to use</div><div class="line">  --privileged=false          Give extended privileges to this container</div><div class="line">  --read-only=false          Mount the container&apos;s root filesystem as read only</div><div class="line">  --restart=no                Restart policy to apply when a container exits</div><div class="line">  --rm=false                  Automatically remove the container when it exits</div><div class="line">  --security-opt=[]          Security Options</div><div class="line">  --sig-proxy=true            Proxy received signals to the process</div><div class="line">  -t, --tty=false            Allocate a pseudo-TTY 为容器重新分配一个伪输入终端，通常与 -i 同时使用</div><div class="line">  -u, --user=                Username or UID (format: &lt;name|uid&gt;[:&lt;group|gid&gt;])</div><div class="line">  --ulimit=[]                Ulimit options</div><div class="line">  --uts=                      UTS namespace to use</div><div class="line">  -v, --volume=[]            Bind mount a volume</div><div class="line">  --volumes-from=[]          Mount volumes from the specified container(s)</div><div class="line">  -w, --workdir=              Working directory inside the container</div></pre></td></tr></table></figure>
+<h1 id="存在的问题解决方法"><a href="#存在的问题解决方法" class="headerlink" title="存在的问题解决方法"></a>存在的问题解决方法</h1><h2 id="ubuntu14下的docker是没有service服务"><a href="#ubuntu14下的docker是没有service服务" class="headerlink" title="ubuntu14下的docker是没有service服务"></a>ubuntu14下的docker是没有service服务</h2><p>去除每次sudo运行docker命令，需要添加组<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"># Add the docker group if it doesn&apos;t already exist.</div><div class="line">$ sudo groupadd docker</div><div class="line">#改完后需要重新登陆用户</div><div class="line">$ sudo gpasswd -a $&#123;USER&#125; docker</div></pre></td></tr></table></figure></p>
+<h2 id="Dockerfile中的EXPOSE、docker-run-–expose、docker-run-p之间的区别"><a href="#Dockerfile中的EXPOSE、docker-run-–expose、docker-run-p之间的区别" class="headerlink" title="Dockerfile中的EXPOSE、docker run –expose、docker run -p之间的区别"></a>Dockerfile中的EXPOSE、docker run –expose、docker run -p之间的区别</h2><ul>
+<li>Dockerfile的EXPOSE相当于docker run –expose，提供container之间的端口访问</li>
+<li>docker run -p允许container外部主机访问container的端口<h2 id="ubuntu14的febootstrap没有-i命令"><a href="#ubuntu14的febootstrap没有-i命令" class="headerlink" title="ubuntu14的febootstrap没有-i命令"></a>ubuntu14的febootstrap没有-i命令</h2></li>
+</ul>
+<p>作者：泛原罪<br>链接：<a href="http://www.jianshu.com/p/adaa34795e64" target="_blank" rel="external">http://www.jianshu.com/p/adaa34795e64</a><br>來源：简书    </p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/docker/" rel="tag"># docker</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/11/07/kali_docker/" rel="next" title="docker安装">
+                <i class="fa fa-chevron-left"></i> docker安装
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/11/08/linux/" rel="prev" title="命令记录">
+                命令记录 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.jpg"
+                alt="Rainer" />
+            
+              <p class="site-author-name" itemprop="name">Rainer</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-name">categories</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          <div class="links-of-author motion-element">
+            
+          </div>
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#基础类"><span class="nav-number">1.</span> <span class="nav-text">基础类</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#查看docker信息"><span class="nav-number">1.1.</span> <span class="nav-text">查看docker信息</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#日志类"><span class="nav-number">2.</span> <span class="nav-text">日志类</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#查看容器日志"><span class="nav-number">2.1.</span> <span class="nav-text">查看容器日志</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#docker-daemon-日志位置"><span class="nav-number">2.2.</span> <span class="nav-text">docker daemon 日志位置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#docker-ps没有响应-日志查询"><span class="nav-number">2.3.</span> <span class="nav-text">docker ps没有响应 日志查询</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#容器类"><span class="nav-number">3.</span> <span class="nav-text">容器类</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#查看容器信息"><span class="nav-number">3.1.</span> <span class="nav-text">查看容器信息</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#容器同步命令"><span class="nav-number">3.2.</span> <span class="nav-text">容器同步命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#容器操作命令"><span class="nav-number">3.3.</span> <span class="nav-text">容器操作命令</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#创建删除容器"><span class="nav-number">3.3.1.</span> <span class="nav-text">创建删除容器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#docker容器随系统自启"><span class="nav-number">3.3.2.</span> <span class="nav-text">docker容器随系统自启</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#容器资源限制参数"><span class="nav-number">3.3.3.</span> <span class="nav-text">容器资源限制参数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#把一个正在运行的容器保存为镜像"><span class="nav-number">3.3.4.</span> <span class="nav-text">把一个正在运行的容器保存为镜像</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#启动停止容器等操作"><span class="nav-number">3.3.5.</span> <span class="nav-text">启动停止容器等操作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#交互式进入容器"><span class="nav-number">3.3.6.</span> <span class="nav-text">交互式进入容器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#查看容器的root用户密码"><span class="nav-number">3.3.7.</span> <span class="nav-text">查看容器的root用户密码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#容器于宿主拷贝文件"><span class="nav-number">3.3.8.</span> <span class="nav-text">容器于宿主拷贝文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#运行一个新容器，同时为它命名、端口映射、文件夹映射"><span class="nav-number">3.3.9.</span> <span class="nav-text">运行一个新容器，同时为它命名、端口映射、文件夹映射</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#一个容器连接到另一个容器"><span class="nav-number">3.3.10.</span> <span class="nav-text">一个容器连接到另一个容器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#导入导出容器"><span class="nav-number">3.3.11.</span> <span class="nav-text">导入导出容器</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#镜像操作"><span class="nav-number">4.</span> <span class="nav-text">镜像操作</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#远程镜像"><span class="nav-number">4.1.</span> <span class="nav-text">远程镜像</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#镜像同步操作"><span class="nav-number">4.2.</span> <span class="nav-text">镜像同步操作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#重新查看container的stdout"><span class="nav-number">4.3.</span> <span class="nav-text">重新查看container的stdout</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#docker-run"><span class="nav-number">5.</span> <span class="nav-text">docker run</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#后台运行-d-、并暴露端口"><span class="nav-number">5.1.</span> <span class="nav-text">后台运行(-d)、并暴露端口</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#run-命令详解"><span class="nav-number">5.2.</span> <span class="nav-text">run 命令详解</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#存在的问题解决方法"><span class="nav-number">6.</span> <span class="nav-text">存在的问题解决方法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#ubuntu14下的docker是没有service服务"><span class="nav-number">6.1.</span> <span class="nav-text">ubuntu14下的docker是没有service服务</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Dockerfile中的EXPOSE、docker-run-–expose、docker-run-p之间的区别"><span class="nav-number">6.2.</span> <span class="nav-text">Dockerfile中的EXPOSE、docker run –expose、docker run -p之间的区别</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ubuntu14的febootstrap没有-i命令"><span class="nav-number">6.3.</span> <span class="nav-text">ubuntu14的febootstrap没有-i命令</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Rainer</span>
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.3</div>
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.3"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.3"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.3"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.3"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  <!-- 页面点击小红心 -->
+  <script type="text/javascript" src="/js/src/love.js"></script>
+  <!-- 背景动画 -->
+  <script type="text/javascript" src="/js/src/particle.js"></script>
+</body>
+</html>

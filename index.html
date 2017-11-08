@@ -181,7 +181,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            Startseite
+            Home
           </a>
         </li>
       
@@ -201,7 +201,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
             
-            Kategorien
+            Categories
           </a>
         </li>
       
@@ -211,7 +211,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            Archiv
+            Archives
           </a>
         </li>
       
@@ -234,6 +234,519 @@
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/11/08/linux/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Rainer">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Rainer">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/11/08/linux/" itemprop="url">命令记录</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-11-08T12:52:33+08:00">
+                2017-11-08
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/linux/" itemprop="url" rel="index">
+                    <span itemprop="name">linux</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="centos"><a href="#centos" class="headerlink" title="centos"></a>centos</h1><h2 id="重启网络"><a href="#重启网络" class="headerlink" title="重启网络"></a>重启网络</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">service network restart</div></pre></td></tr></table></figure>
+<h2 id="screen"><a href="#screen" class="headerlink" title="screen"></a>screen</h2><h3 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令:"></a>常用命令:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">screen -S name #创建一个名字为name的会话</div><div class="line">screen -r name #恢复到离开前创建的name会话的工作界面</div><div class="line">screen -ls screen #会列出当前存在的会话列表</div><div class="line">exit #会提示：[screen is terminating]，表示已经成功退出screen会话</div></pre></td></tr></table></figure>
+<h3 id="远程演示"><a href="#远程演示" class="headerlink" title="远程演示"></a>远程演示</h3><p>首先演示者先在服务器上执行<br><code>screen -S test</code> 创建一个screen会话，<br>观众可以链接到远程服务器上执行<code>screen -x test</code> 观众屏幕上就会出现和演示者同步。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/11/08/docke/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Rainer">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Rainer">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/11/08/docke/" itemprop="url">docker常用命令记录</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-11-08T12:34:45+08:00">
+                2017-11-08
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/web/" itemprop="url" rel="index">
+                    <span itemprop="name">web</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="基础类"><a href="#基础类" class="headerlink" title="基础类"></a>基础类</h1><h2 id="查看docker信息"><a href="#查看docker信息" class="headerlink" title="查看docker信息"></a>查看docker信息</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"># 查看docker版本</div><div class="line">docker version</div><div class="line"># 显示docker系统的信息</div><div class="line">docker info</div><div class="line"># 日志信息</div><div class="line">docker logs</div><div class="line"># 故障检查</div><div class="line">service  docker  status</div><div class="line"># 启动关闭docker</div><div class="line">sudo service docker start|stop</div></pre></td></tr></table></figure>
+<h1 id="日志类"><a href="#日志类" class="headerlink" title="日志类"></a>日志类</h1><h2 id="查看容器日志"><a href="#查看容器日志" class="headerlink" title="查看容器日志"></a>查看容器日志</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">docker logs -f &lt;容器名orID&gt;</div></pre></td></tr></table></figure>
+<h2 id="docker-daemon-日志位置"><a href="#docker-daemon-日志位置" class="headerlink" title="docker daemon 日志位置"></a>docker daemon 日志位置</h2><p>根据系统不同各不相同<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">* Ubuntu - /var/log/upstart/docker.log</div><div class="line">* Boot2Docker - /var/log/docker.log</div><div class="line">* Debian GNU/Linux - /var/log/daemon.log</div><div class="line">* CentOS - /var/log/daemon.log | grep docker</div><div class="line">* Fedora - journalctl -u docker.service</div><div class="line">* Red Hat Enterprise Linux Server - /var/log/messages | grep docker</div></pre></td></tr></table></figure></p>
+<h2 id="docker-ps没有响应-日志查询"><a href="#docker-ps没有响应-日志查询" class="headerlink" title="docker ps没有响应 日志查询"></a>docker ps没有响应 日志查询</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"># grep 所有容器的config.json</div><div class="line">docker logs [conID]</div><div class="line"># 确认问题后</div><div class="line"># 该config.json 中有该容器1号进程的pid</div><div class="line">kill -9 pid</div></pre></td></tr></table></figure>
+<h1 id="容器类"><a href="#容器类" class="headerlink" title="容器类"></a>容器类</h1><p>docker容器可以理解为在沙盒中运行的进程。</p>
+<blockquote>
+<p>这个沙盒包含了该进程运行所必须的资源，包括文件系统、系统类库、shell 环境等等。但这个沙盒默认是不会运行任何程序的。你需要在沙盒中运行一个进程来启动某一个容器。这个进程是该容器的唯一进程，所以当该进程结束的时候，容器也会完全的停止。</p>
+<h2 id="查看容器信息"><a href="#查看容器信息" class="headerlink" title="查看容器信息"></a>查看容器信息</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"># 查看当前运行的容器</div><div class="line">docker ps</div><div class="line"># 查看全部容器</div><div class="line">docker ps -a</div><div class="line"># 查看全部容器的id和信息</div><div class="line">docker ps -a -q</div><div class="line"># 查看一个正在运行容器进程，支持 ps 命令参数</div><div class="line">docker top</div><div class="line"># 查看容器的示例id</div><div class="line">sudo docker inspect -f  &apos;&#123;&#123;.Id&#125;&#125;&apos; [id]</div><div class="line"># 检查镜像或者容器的参数，默认返回 JSON 格式</div><div class="line">docker inspect</div><div class="line"># 返回 ubuntu:14.04  镜像的 docker 版本</div><div class="line">docker inspect --format &apos;&#123;&#123;.DockerVersion&#125;&#125;&apos; ubuntu:14.04</div></pre></td></tr></table></figure>
+</blockquote>
+<h2 id="容器同步命令"><a href="#容器同步命令" class="headerlink" title="容器同步命令"></a>容器同步命令</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"># 保存对容器的修改</div><div class="line">docker commit</div><div class="line"># 对比容器的改动</div><div class="line">docker diff</div><div class="line"># 附加到一个运行的容器上</div><div class="line">docker attach</div></pre></td></tr></table></figure>
+<h2 id="容器操作命令"><a href="#容器操作命令" class="headerlink" title="容器操作命令"></a>容器操作命令</h2><h3 id="创建删除容器"><a href="#创建删除容器" class="headerlink" title="创建删除容器"></a>创建删除容器</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"># 创建一个容器命名为 test 使用镜像daocloud.io/library/ubuntu</div><div class="line">docker create -it --name test daocloud.io/library/ubuntu</div><div class="line"># 创建并启动一个容器 名为 test 使用镜像daocloud.io/library/ubuntu</div><div class="line">docker run --name test daocloud.io/library/ubuntu</div><div class="line"># 删除一个容器</div><div class="line">docker rm [容器id]</div><div class="line"># 删除所有容器</div><div class="line">docker rm `docker ps -a -q`</div><div class="line"># 根据Dockerfile 构建</div><div class="line">docker build -t [image_name] [Dockerfile_path]</div></pre></td></tr></table></figure>
+<h3 id="docker容器随系统自启"><a href="#docker容器随系统自启" class="headerlink" title="docker容器随系统自启"></a>docker容器随系统自启</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">docker run --restart=always</div></pre></td></tr></table></figure>
+<ul>
+<li>no – 默认值，如果容器挂掉不自动重启</li>
+<li>on-failure – 当容器以非 0 码退出时重启容器,同时可接受一个可选的最大重启次数参数 (e.g. on-failure:10).</li>
+<li>always – 不管退出码是多少都要重启<h3 id="容器资源限制参数"><a href="#容器资源限制参数" class="headerlink" title="容器资源限制参数"></a>容器资源限制参数</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"># 限制内存最大使用</div><div class="line">-m 1024m --memory-swap=1024m</div><div class="line"># 限制容器使用CPU</div><div class="line">--cpuset-cpus=&quot;0,1&quot;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="把一个正在运行的容器保存为镜像"><a href="#把一个正在运行的容器保存为镜像" class="headerlink" title="把一个正在运行的容器保存为镜像"></a>把一个正在运行的容器保存为镜像</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">docker commit &lt;CONTAIN-ID&gt; &lt;IMAGE-NAME&gt;</div></pre></td></tr></table></figure>
+<h3 id="启动停止容器等操作"><a href="#启动停止容器等操作" class="headerlink" title="启动停止容器等操作"></a>启动停止容器等操作</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">docker start|stop|restart [id]</div><div class="line"># 暂停|恢复 某一容器的所有进程</div><div class="line">docker pause|unpause [id]</div><div class="line"># 杀死一个或多个指定容器进程</div><div class="line">docker kill -s KILL [id]</div><div class="line"># 停止全部运行的容器</div><div class="line">docker stop `docker ps -q`</div><div class="line"># 杀掉全部运行的容器</div><div class="line">docker kill -s KILL `docker ps -q`</div></pre></td></tr></table></figure>
+<h3 id="交互式进入容器"><a href="#交互式进入容器" class="headerlink" title="交互式进入容器"></a>交互式进入容器</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo docker exec -it &#123;&#123;containerName or containerID&#125;&#125; bash</div></pre></td></tr></table></figure>
+<h3 id="查看容器的root用户密码"><a href="#查看容器的root用户密码" class="headerlink" title="查看容器的root用户密码"></a>查看容器的root用户密码</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">docker logs &lt;容器名orID&gt; 2&gt;&amp;1 | grep &apos;^User: &apos; | tail -n1</div></pre></td></tr></table></figure>
+<p>因为Docker容器启动时的root用户的密码是随机分配的。所以，通过这种方式就可以得到容器的root用户的密码了</p>
+<h3 id="容器于宿主拷贝文件"><a href="#容器于宿主拷贝文件" class="headerlink" title="容器于宿主拷贝文件"></a>容器于宿主拷贝文件</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">docker cp [OPTIONS] CONTAINER:SRC_PATH DEST_PATH|-</div><div class="line">docker cp [OPTIONS] SRC_PATH|- CONTAINER:DEST_PATH</div><div class="line"># 本地文件上传到对应容器的目录</div><div class="line">docker cp local.sh [CONTAINERid]:[TagPath]</div></pre></td></tr></table></figure>
+<p>此命令为高版本docker才有，当然1.11+肯定包含</p>
+<h3 id="运行一个新容器，同时为它命名、端口映射、文件夹映射"><a href="#运行一个新容器，同时为它命名、端口映射、文件夹映射" class="headerlink" title="运行一个新容器，同时为它命名、端口映射、文件夹映射"></a>运行一个新容器，同时为它命名、端口映射、文件夹映射</h3><p>以<code>redmine</code>镜像为例<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">docker run --name redmine -p 9003:80 -p 9023:22 -d -v /var/redmine/files:/redmine/files -v /var/redmine/mysql:/var/lib/mysql sameersbn/redmine</div></pre></td></tr></table></figure></p>
+<h3 id="一个容器连接到另一个容器"><a href="#一个容器连接到另一个容器" class="headerlink" title="一个容器连接到另一个容器"></a>一个容器连接到另一个容器</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">docker run -i -t --name sonar -d -link mmysql:db  tpires/sonar-server sonar</div></pre></td></tr></table></figure>
+<h3 id="导入导出容器"><a href="#导入导出容器" class="headerlink" title="导入导出容器"></a>导入导出容器</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"># 支持远程文件 .tar, .tar.gz, .tgz, .bzip, .tar.xz, .txz</div><div class="line">docker import</div><div class="line"># 导出</div><div class="line">docker export [id] &gt;~/Downloads/ubuntu_nexus.tar</div><div class="line">导出后导入（exported-imported)）的容器会丢失所有的提交历史，无法回滚。</div></pre></td></tr></table></figure>
+<h1 id="镜像操作"><a href="#镜像操作" class="headerlink" title="镜像操作"></a>镜像操作</h1><h2 id="远程镜像"><a href="#远程镜像" class="headerlink" title="远程镜像"></a>远程镜像</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">docker login</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">docker search</div><div class="line"># 搜索处收藏数不小于 3 ，并且能够自动化构建的  django 镜像，并且完整显示镜像描述</div><div class="line">docker search -s 3 --automated --no-trunc django</div><div class="line">docker pull</div><div class="line"># 拉取ubuntu最新的镜像</div><div class="line">docker pull ubuntu:latest</div><div class="line"># 服务器拉取个人动态，可选择时间区间</div><div class="line">docker events</div><div class="line"># 拉取个人从 2015/07/20 到 2015/08/08 的个人动态</div><div class="line">docker events --since=&quot;20150720&quot; --until=&quot;20150808&quot;</div><div class="line">`</div></pre></td></tr></table></figure>
+<h2 id="镜像同步操作"><a href="#镜像同步操作" class="headerlink" title="镜像同步操作"></a>镜像同步操作</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div></pre></td><td class="code"><pre><div class="line"># 标记本地镜像，将其归入某一仓库</div><div class="line">docker tag</div><div class="line"># 将 ID 为 5db5f84x1261 的容器标记为 mine/lnmp:0.2 镜像</div><div class="line">docker tag 5db5f84x1261 mine/lnmp:0.2</div><div class="line"># 将镜像推送至远程仓库，默认为 Docker Hub</div><div class="line">docker push</div><div class="line">本地镜像</div><div class="line"></div><div class="line"># 列出本地所有镜像</div><div class="line">docker images</div><div class="line"># 本地镜像名为 ubuntu 的所有镜像</div><div class="line">docker images ubuntu</div><div class="line"># 查看指定镜像的创建历史</div><div class="line">docker history [id]</div><div class="line"># 本地移除一个或多个指定的镜像</div><div class="line">docker rmi</div><div class="line"># 移除本地全部镜像</div><div class="line">docker rmi `docker images -a -q`</div><div class="line"># 指定镜像保存成 tar 归档文件， docker load 的逆操作</div><div class="line">docker save</div><div class="line"># 将镜像 ubuntu:14.04 保存为 ubuntu14.04.tar 文件</div><div class="line">docker save -o ubuntu14.04.tar ubuntu:14.04</div><div class="line"># 从 tar 镜像归档中载入镜像， docker save 的逆操作</div><div class="line">docker load</div><div class="line"># 上面命令的意思是将 ubuntu14.04.tar 文件载入镜像中</div><div class="line">docker load -i ubuntu14.04.tar</div><div class="line">docker load &lt; /home/save.tar</div><div class="line"># 构建自己的镜像</div><div class="line">docker build -t &lt;镜像名&gt; &lt;Dockerfile路径&gt;</div><div class="line">docker build -t xx/gitlab .</div></pre></td></tr></table></figure>
+<blockquote>
+<p>保存后再加载（saved-loaded）的镜像不会丢失提交历史和层，可以回滚</p>
+<h2 id="重新查看container的stdout"><a href="#重新查看container的stdout" class="headerlink" title="重新查看container的stdout"></a>重新查看container的stdout</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"># 启动top命令，后台运行</div><div class="line">$ ID=$(sudo docker run -d ubuntu /usr/bin/top -b)</div><div class="line"># 获取正在running的container的输出</div><div class="line">$ sudo docker attach $ID</div><div class="line">top - 02:05:52 up  3:05,  0 users,  load average: 0.01, 0.02, 0.05</div><div class="line">Tasks:  1 total,  1 running,  0 sleeping,  0 stopped,  0 zombie</div><div class="line">Cpu(s):  0.1%us,  0.2%sy,  0.0%ni, 99.7%id,  0.0%wa,  0.0%hi,  0.0%si,  0.0%st</div><div class="line">Mem:    373572k total,  355560k used,    18012k free,    27872k buffers</div><div class="line">Swap:  786428k total,        0k used,  786428k free,  221740k cached</div><div class="line">^C$</div><div class="line">$ sudo docker stop $ID</div></pre></td></tr></table></figure>
+</blockquote>
+<h1 id="docker-run"><a href="#docker-run" class="headerlink" title="docker run"></a>docker run</h1><h2 id="后台运行-d-、并暴露端口"><a href="#后台运行-d-、并暴露端口" class="headerlink" title="后台运行(-d)、并暴露端口"></a>后台运行(-d)、并暴露端口</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">docker run -d -p 127.0.0.1:33301:22 centos6-ssh</div></pre></td></tr></table></figure>
+<h2 id="run-命令详解"><a href="#run-命令详解" class="headerlink" title="run 命令详解"></a>run 命令详解</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div></pre></td><td class="code"><pre><div class="line">-a, --attach=[]            Attach to STDIN, STDOUT or STDERR 指定标准输入输出内容类型，可选 STDIN/STDOUT/STDERR 三项</div><div class="line">  --add-host=[]              Add a custom host-to-IP mapping (host:ip)</div><div class="line">  --blkio-weight=0            Block IO (relative weight), between 10 and 1000</div><div class="line">  -c, --cpu-shares=0          CPU shares (relative weight)</div><div class="line">  --cap-add=[]                Add Linux capabilities</div><div class="line">  --cap-drop=[]              Drop Linux capabilities</div><div class="line">  --cgroup-parent=            Optional parent cgroup for the container</div><div class="line">  --cidfile=                  Write the container ID to the file</div><div class="line">  --cpu-period=0              Limit CPU CFS (Completely Fair Scheduler) period</div><div class="line">  --cpu-quota=0              Limit the CPU CFS quota</div><div class="line">  --cpuset-cpus=              CPUs in which to allow execution (0-3, 0,1) 绑定容器到指定CPU运行</div><div class="line">  --cpuset-mems=              MEMs in which to allow execution (0-3, 0,1) 绑定容器到指定MEM运行</div><div class="line">  -d, --detach=false          Run container in background and print container ID 后台运行容器，并返回容器ID</div><div class="line">  --device=[]                Add a host device to the container</div><div class="line">  --dns=[]                    Set custom DNS servers 指定容器使用的DNS服务器，默认和宿主一致</div><div class="line">  --dns-search=[]            Set custom DNS search domains 指定容器DNS搜索域名，默认和宿主一致</div><div class="line">  -e, --env=[]                Set environment variables 设置环境变量</div><div class="line">  --entrypoint=              Overwrite the default ENTRYPOINT of the image</div><div class="line">  --env-file=[]              Read in a file of environment variables 从指定文件读入环境变量</div><div class="line">  --expose=[]                Expose a port or a range of ports</div><div class="line">  -h, --hostname=            Container host name 指定容器的hostname</div><div class="line">  --help=false                Print usage</div><div class="line">  -i, --interactive=false    Keep STDIN open even if not attached 以交互模式运行容器，通常与 -t 同时使用</div><div class="line">  --ipc=                      IPC namespace to use</div><div class="line">  -l, --label=[]              Set meta data on a container</div><div class="line">  --label-file=[]            Read in a line delimited file of labels</div><div class="line">  --link=[]                  Add link to another container</div><div class="line">  --log-driver=              Logging driver for container</div><div class="line">  --log-opt=[]                Log driver options</div><div class="line">  --lxc-conf=[]              Add custom lxc options</div><div class="line">  -m, --memory=              Memory limit</div><div class="line">  --mac-address=              Container MAC address (e.g. 92:d0:c6:0a:29:33)</div><div class="line">  --memory-swap=              Total memory (memory + swap), &apos;-1&apos; to disable swap</div><div class="line">  --name=                    Assign a name to the container 为容器指定一个名称</div><div class="line">  --net=bridge                Set the Network mode for the container  指定容器的网络连接类型，支持 bridge/host/none/container:&lt;name|id&gt; 四种类型</div><div class="line">  --oom-kill-disable=false    Disable OOM Killer</div><div class="line">  -P, --publish-all=false    Publish all exposed ports to random ports</div><div class="line">  -p, --publish=[]            Publish a container&apos;s port(s) to the host</div><div class="line">  --pid=                      PID namespace to use</div><div class="line">  --privileged=false          Give extended privileges to this container</div><div class="line">  --read-only=false          Mount the container&apos;s root filesystem as read only</div><div class="line">  --restart=no                Restart policy to apply when a container exits</div><div class="line">  --rm=false                  Automatically remove the container when it exits</div><div class="line">  --security-opt=[]          Security Options</div><div class="line">  --sig-proxy=true            Proxy received signals to the process</div><div class="line">  -t, --tty=false            Allocate a pseudo-TTY 为容器重新分配一个伪输入终端，通常与 -i 同时使用</div><div class="line">  -u, --user=                Username or UID (format: &lt;name|uid&gt;[:&lt;group|gid&gt;])</div><div class="line">  --ulimit=[]                Ulimit options</div><div class="line">  --uts=                      UTS namespace to use</div><div class="line">  -v, --volume=[]            Bind mount a volume</div><div class="line">  --volumes-from=[]          Mount volumes from the specified container(s)</div><div class="line">  -w, --workdir=              Working directory inside the container</div></pre></td></tr></table></figure>
+<h1 id="存在的问题解决方法"><a href="#存在的问题解决方法" class="headerlink" title="存在的问题解决方法"></a>存在的问题解决方法</h1><h2 id="ubuntu14下的docker是没有service服务"><a href="#ubuntu14下的docker是没有service服务" class="headerlink" title="ubuntu14下的docker是没有service服务"></a>ubuntu14下的docker是没有service服务</h2><p>去除每次sudo运行docker命令，需要添加组<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"># Add the docker group if it doesn&apos;t already exist.</div><div class="line">$ sudo groupadd docker</div><div class="line">#改完后需要重新登陆用户</div><div class="line">$ sudo gpasswd -a $&#123;USER&#125; docker</div></pre></td></tr></table></figure></p>
+<h2 id="Dockerfile中的EXPOSE、docker-run-–expose、docker-run-p之间的区别"><a href="#Dockerfile中的EXPOSE、docker-run-–expose、docker-run-p之间的区别" class="headerlink" title="Dockerfile中的EXPOSE、docker run –expose、docker run -p之间的区别"></a>Dockerfile中的EXPOSE、docker run –expose、docker run -p之间的区别</h2><ul>
+<li>Dockerfile的EXPOSE相当于docker run –expose，提供container之间的端口访问</li>
+<li>docker run -p允许container外部主机访问container的端口<h2 id="ubuntu14的febootstrap没有-i命令"><a href="#ubuntu14的febootstrap没有-i命令" class="headerlink" title="ubuntu14的febootstrap没有-i命令"></a>ubuntu14的febootstrap没有-i命令</h2></li>
+</ul>
+<p>作者：泛原罪<br>链接：<a href="http://www.jianshu.com/p/adaa34795e64" target="_blank" rel="external">http://www.jianshu.com/p/adaa34795e64</a><br>來源：简书    </p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/11/07/kali_docker/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Rainer">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Rainer">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/11/07/kali_docker/" itemprop="url">docker安装</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-11-07T23:32:00+08:00">
+                2017-11-07
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/docker/" itemprop="url" rel="index">
+                    <span itemprop="name">docker</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="kali"><a href="#kali" class="headerlink" title="kali"></a>kali</h1><h2 id="安装前的准备"><a href="#安装前的准备" class="headerlink" title="安装前的准备:"></a>安装前的准备:</h2><h3 id="step1"><a href="#step1" class="headerlink" title="step1:"></a>step1:</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">uname -r //查看内核版本</div></pre></td></tr></table></figure>
+<p>Docker需要一个64位的安装，无论你的Debian版本。 此外，你的内核必须至少是3.10。 最新的3.10次要版本或更新的维护版本也是可以接受的  </p>
+<h3 id="step2"><a href="#step2" class="headerlink" title="step2:"></a>step2:</h3><p>对于Debian wheezy用户i必须提供反向端口，启用backports</p>
+<ul>
+<li>用任意编辑器打开/etc/apt/sources.list.d/backports.list文件，如果没有这个文件，就创建一个。</li>
+<li>删除现有所有条目后添加一条新的反向端口条目<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">deb http://http.debian.net/debian wheezy-backports main</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="step3"><a href="#step3" class="headerlink" title="step3:"></a>step3:</h3><p>更新软件包信息<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">## apt-get update</div></pre></td></tr></table></figure></p>
+<p>更新存储库信息<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">apt-get install apt-transport-https ca-certificates gnupg2</div></pre></td></tr></table></figure></p>
+<p>添加新的GPG key（这里可能会失败几次，提示从公钥服务器接受失败，多试几次就可以了）<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">## apt-key adv \</div><div class="line">  　　--keyserver hkp://ha.pool.sks-keyservers.net:80 \</div><div class="line">  　　--recv-keys 58118E89F3A912897C070ADBF76221572C52609D</div></pre></td></tr></table></figure></p>
+<p>用任意编辑器打开/etc/apt/sources.list.d/docker.list文件，如果不存在，就创建一个<br>删除现有的所有条目，并添加新的条目（我只列出wheezy添加的，其他版本的请自行到官网查看）<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">deb https://apt.dockerproject.org/repo debian-wheezy main</div></pre></td></tr></table></figure></p>
+<p>更新apt存储库，并验证apt存储库是正确的<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">## apt-get update</div><div class="line">## apt-cache policy docker-engine</div></pre></td></tr></table></figure></p>
+<h2 id="安装docker"><a href="#安装docker" class="headerlink" title="安装docker"></a>安装docker</h2><ul>
+<li><p>1.更新apt存储库</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">## apt-get update</div></pre></td></tr></table></figure>
+</li>
+<li><p>2.安装Docker</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">## apt-get install docker-engine</div></pre></td></tr></table></figure>
+</li>
+<li><p>3.启动Docker服务</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">## service docker start</div></pre></td></tr></table></figure>
+</li>
+<li><p>4.更新Docker</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">## apt-get upgrade docker-engine</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="卸载Docker"><a href="#卸载Docker" class="headerlink" title="卸载Docker"></a>卸载Docker</h2><ul>
+<li><p>卸载docker软件包</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">## apt-get purge docker-engine</div></pre></td></tr></table></figure>
+</li>
+<li><p>卸载docker所有程序包和依赖关系</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">## apt-get autoremove --purge docker-engine</div></pre></td></tr></table></figure>
+</li>
+<li><p>如果要删除所有图像，容器和卷，请运行以下命令</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">## rm -rf /var/lib/docker</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h1 id="centos7"><a href="#centos7" class="headerlink" title="centos7"></a>centos7</h1><h2 id="CentOS7环境下安装Docker"><a href="#CentOS7环境下安装Docker" class="headerlink" title="CentOS7环境下安装Docker"></a>CentOS7环境下安装Docker</h2><h3 id="安装包的组成"><a href="#安装包的组成" class="headerlink" title="安装包的组成"></a>安装包的组成</h3><p>2014年7月7日，CentOS官方发布了首个CentOS7正式版。CentOS7的Linux内核升级到3.10.0，对Linux容器支持得到大大增强。</p>
+<p>在CentOS7的Extra仓库中，有Docker的发布版。这个发布版包含了docker的一个比较老的版本(0.11.1)。相信随着Docker稳定版本的逐步退出，CentOS7会升级源仓库中的docker版本。</p>
+<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>在CentOS7下可以直接从源仓库安装docker，命令如下：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo yum install docker</div></pre></td></tr></table></figure></p>
+<p>安装程序将docker程序安装到<code>/usr/bin</code>目录下，配置文件安装在<code>/etc/sysconfig/docker</code>。安装好docker之后，可以将docker加入到启动服务组中，命令如下：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo systemctl <span class="built_in">enable</span> docker.service</div></pre></td></tr></table></figure></p>
+<h3 id="运行"><a href="#运行" class="headerlink" title="运行"></a>运行</h3><p>手动启动docker服务器，使用命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo systemctl start docker.service</div></pre></td></tr></table></figure></p>
+<p>初次启动需要一些时间，启动好后，你可以使用docker命令管理和运行你的docker镜像和容器了。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
     
       
 
@@ -277,7 +790,7 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Posted on</span>
               
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-11-06T22:59:37+08:00">
                 2017-11-06
@@ -298,7 +811,7 @@
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">in</span>
+                <span class="post-meta-item-text">In</span>
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
@@ -389,166 +902,6 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/11/06/1/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Rainer">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Rainer">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/11/06/1/" itemprop="url">toctest</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Veröffentlicht am</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-11-06T22:59:37+08:00">
-                2017-11-06
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">in</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/web/" itemprop="url" rel="index">
-                    <span itemprop="name">web</span>
-                  </a>
-                </span>
-
-                
-                
-                  . 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/web/php/" itemprop="url" rel="index">
-                    <span itemprop="name">php</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="222"><a href="#222" class="headerlink" title="222"></a>222</h1><p>haha</p>
-<h2 id="heieieiehie"><a href="#heieieiehie" class="headerlink" title="heieieiehie"></a>heieieiehie</h2><p>heieieiehie</p>
-<h2 id="223"><a href="#223" class="headerlink" title="223"></a>223</h2><ul>
-<li>53</li>
-<li>55</li>
-<li>66</li>
-<li>55</li>
-</ul>
-<h1 id="eeeeeee"><a href="#eeeeeee" class="headerlink" title="eeeeeee"></a>eeeeeee</h1><h2 id="555"><a href="#555" class="headerlink" title="555"></a>555</h2><h2 id="5315555"><a href="#5315555" class="headerlink" title="5315555"></a>5315555</h2>
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/11/06/2017_11_14/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -578,7 +931,7 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Posted on</span>
               
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-11-06T22:59:37+08:00">
                 2017-11-06
@@ -599,7 +952,7 @@
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">in</span>
+                <span class="post-meta-item-text">In</span>
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
@@ -610,7 +963,7 @@
 
                 
                 
-                  . 
+                  , 
                 
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
@@ -822,7 +1175,7 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Posted on</span>
               
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-11-06T22:59:37+08:00">
                 2017-11-06
@@ -843,7 +1196,7 @@
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">in</span>
+                <span class="post-meta-item-text">In</span>
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
@@ -996,8 +1349,8 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">4</span>
-                  <span class="site-state-item-name">Artikel</span>
+                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-name">posts</span>
                 </a>
               </div>
             
@@ -1007,8 +1360,8 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">3</span>
-                  <span class="site-state-item-name">Kategorien</span>
+                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-name">categories</span>
                 </a>
               </div>
             
@@ -1018,8 +1371,8 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">2</span>
-                  <span class="site-state-item-name">Tags</span>
+                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-name">tags</span>
                 </a>
               </div>
             
@@ -1067,7 +1420,7 @@
 </div>
 
 
-  <div class="powered-by">Erstellt mit  <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
 
 
 

